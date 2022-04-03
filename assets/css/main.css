@@ -20,6 +20,7 @@ h1 {
 
 #main-nav{
     margin-top: 10px;
+    list-style: none;
     list-style-type: none;
     padding-left: 0px;
     text-align-last: center;
@@ -32,10 +33,76 @@ h1 {
     color: white;
 }
 
-#main-nav li:hover{
+#main-nav ul li{
     color: white;
 }
 
+#main-nav a{
+    padding: 5px 15px ;
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    display:block;
+    text-decoration: none;
+}
+
+#main-nav a:hover{
+	opacity: 0.7;
+    background-color: gray;
+    color: black;
+}
+
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:black;
+  height: 1px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Aca esta los párametros para las cajas*/
+.title_box {
+  border: blue 1px solid;
+}
+
+.title_box #title {
+  position: relative;
+  top: -0.5em;
+  margin-left: 1em;
+  display: inline;
+  background-color: black;
+  color: white;
+}
+
+.title_box #content {}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:black;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid black;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+/*Aca estan los parámetros para el footer*/
 footer{
     padding: 0;
     margin-top: auto;
@@ -49,6 +116,10 @@ footer{
 
 .socials li{
     display: inline-block;
+}
+
+.social li:hover{
+	color: blue;
 }
 
 .socials a{
