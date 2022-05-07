@@ -5,7 +5,11 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
-
+/*
+html{
+  font-size: 10px;
+}
+*/
 h1 {
     font-family: sans-serif;
 }
