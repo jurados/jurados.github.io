@@ -1,0 +1,16 @@
+{
+  "hash": "21cbbceeb1d599413bd29220093ab58c",
+  "result": {
+    "markdown": "---\ntitle: 'This is a dummy blog posts'\ndate: '2022-06-01'\ncategories: ['123', 'Second Tag']\ndescription: 'This is a test post. In this post, I try out different functionalities'\nexecute: \n  message: false\n  warning: false\neditor_options: \n  chunk_output_type: console\n---\n\n\n# Heading 1\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus. \n\n## Merriweather\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. **Aliquam feugiat dictum bibendum.** Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. [Fusce luctus](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n### 3 - Code\n\nThis is `inline` code plus a small code chunk.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- c(1,2,3)\n```\n:::\n\n\n\n### 3 - Tabsets\n\n\n::: {.cell}\n\n:::\n\n\n\n::: panel-tabset\n### Transforming OLS estimates\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\"}\n1+1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n### Maximizing likelihood\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\"}\n1+1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n:::\n\n#### 4 - Some math stuff\n\n$$\n\\int_0^1 f(x) \\ dx\n$$\n\n\n\n\n## 2 - Columns\n\n::: {layout=\"[[1,1]]\"}\n\n\n::: {.cell}\n\n```{.r .cell-code}\ngeom_density(\n  mapping = NULL,\n  data = NULL,\n  stat = \"density\",\n  position = \"identity\",\n  ...,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE,\n  outline.type = \"upper\"\n)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nstat_density(\n  mapping = NULL,\n  data = NULL,\n  geom = \"area\",\n  position = \"stack\",\n  ...,\n  bw = \"nrd0\",\n  adjust = 1,\n  kernel = \"gaussian\",\n  n = 512,\n  trim = FALSE,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE\n)\n```\n:::\n\n\n:::\n\n## 2 - Margin captions\n\n\n::: {.cell .fig-cap-location-margin}\n\n```{.r .cell-code}\nx <- c(1,2,3)\nplot(x,sin(x))\n```\n\n::: {.cell-output-display}\n![Bla bla bla. This is a caption in the margin. Super cool isn't it?](post_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "post_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Jurados"
+  description: "This is Steve Jurado's personal blog"
+  page-footer: 
+    center:
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com/SteveJurado
+      - icon: facebook
+        href: https://www.facebook.com/steve.juradopinilla
+      - icon: linkedin
+        href: https://www.linkedin.com/in/astrojurados/
+  navbar:
+    pinned: true
+    #background: dark
+    right:
+      - text: Blog
+        href: blog.qmd
+      - text: Vitae
+        href: vitae.qmd
+format:
+  html:
+    theme: theme.scss
+    css: styles.css
+
+editor: visual
+

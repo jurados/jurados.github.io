@@ -1,0 +1,113 @@
+---
+title: 'This is a dummy blog posts'
+date: '2022-06-01'
+categories: ['123', 'Second Tag']
+description: 'This is a test post. In this post, I try out different functionalities'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Heading 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus. 
+
+## Merriweather
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. **Aliquam feugiat dictum bibendum.** Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. [Fusce luctus](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.
+
+### 3 - Code
+
+This is `inline` code plus a small code chunk.
+
+```{r}
+x <- c(1,2,3)
+```
+
+
+### 3 - Tabsets
+
+```{r, echo = F}
+x <- c(1,2,3)
+```
+
+
+::: panel-tabset
+### Transforming OLS estimates
+
+```{r}
+#| code-fold: true
+1+1
+```
+
+### Maximizing likelihood
+
+```{r}
+#| code-fold: true
+1+1
+```
+:::
+
+#### 4 - Some math stuff
+
+$$
+\int_0^1 f(x) \ dx
+$$
+
+
+
+
+## 2 - Columns
+
+::: {layout="[[1,1]]"}
+
+```{r}
+#| eval: false
+#| echo: true
+geom_density(
+  mapping = NULL,
+  data = NULL,
+  stat = "density",
+  position = "identity",
+  ...,
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE,
+  outline.type = "upper"
+)
+```
+
+```{r}
+#| eval: false
+#| echo: true
+stat_density(
+  mapping = NULL,
+  data = NULL,
+  geom = "area",
+  position = "stack",
+  ...,
+  bw = "nrd0",
+  adjust = 1,
+  kernel = "gaussian",
+  n = 512,
+  trim = FALSE,
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE
+)
+```
+
+:::
+
+## 2 - Margin captions
+
+```{r}
+#| fig-cap: "Bla bla bla. This is a caption in the margin. Super cool isn't it?"
+#| fig-cap-location: margin
+x <- c(1,2,3)
+plot(x,sin(x))
+```
