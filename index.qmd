@@ -13,7 +13,7 @@ about:
       href: https://www.linkedin.com/in/astrojurados/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/jurados
     - icon: facebook
       text: Facebook
       href: https://www.facebook.com/steve.juradopinilla
@@ -24,9 +24,9 @@ About this blog
 \### This content appears above the formatted about page content.
 
 ::: {#hero-heading}
-I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.co" style="color:#0B351D; text-decoration: none;">Universidad de Antioquia</a>.
+I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.co" style="color:#0B351D; text-decoration: none;" target="_blank">Universidad de Antioquia</a>.
 
-Recently I am a PhD. student in Astronomy at <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;">Departamento de Astronomía, Universidad de Chile</a>.
+Recently I am a PhD. student in Astronomy at <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.
 
 I was born in Manizales (Colombia), one of the coffee world capitals. I moved to Medellin to study Astronomy. Aside from my professional work in astronomy, I also like hearing histories about the development of cities and civilizations during and after the independence centuries. In 2012 I entered Conservatorio de Música de la Universidad de Caldas, where I learned the basics to play guitar, reading scores, and a little choir. I want to practice choral music again. Also, I like the Rol/RPG games as table games as video games. If you are a new party, take me into account. 
 
