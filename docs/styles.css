@@ -1,0 +1,12 @@
+/* css styles */
+
+.my_button {
+  padding:0.6em 2em;
+  border-radius: 8px;
+  color:#fff;
+  background-color:#000;
+  font-size:0.7em;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+}
