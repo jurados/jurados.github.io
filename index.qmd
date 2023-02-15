@@ -1,66 +1,115 @@
 ---
-title: "Steve Jurado"
-image: profile.png
-about:
-  id: hero-heading
-  template: trestles
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/SteveJurado
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/astrojurados/
-    - icon: github
-      text: Github
-      href: https://github.com/jurados
-    - icon: facebook
-      text: Facebook
-      href: https://www.facebook.com/steve.juradopinilla
+#title: "Steve Jurado"
+page-layout: full
+#image: profile.png
+#about:
+#  id: hero-heading
+#  template: trestles
+#  links:
+#    - icon: twitter
+#      text: Twitter
+#      href: https://twitter.com/SteveJurado
+#    - icon: linkedin
+#      text: LinkedIn
+#      href: https://www.linkedin.com/in/astrojurados/
+#    - icon: github
+#      text: Github
+#      href: https://github.com/jurados
+#    - icon: facebook
+#      text: Facebook
+#      href: https://www.facebook.com/steve.juradopinilla
 ---
-
+<!--
 About this blog
 
 \### This content appears above the formatted about page content.
+-->
 
-::: {#hero-heading}
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 style='item-align:center;'}
+<center>
+![](profile.png){width=500px height=500px fig-align="center"}
+
+<a href='https://www.facebook.com/steve.juradopinilla' target='_blank'><img src="https://img.shields.io/badge/-facebook-blue?style=for-the-badge&logo=Facebook&logoColor=white&color=black"> </a>
+<a href='https://twitter.com/SteveJurado' target='_blank'>
+<img src="https://img.shields.io/badge/-twitter-blue?style=for-the-badge&logo=twitter&logoColor=white&color=black"> </a>
+<a href='https://www.linkedin.com/in/astrojurados/' target='_blank'>
+<img src="https://img.shields.io/badge/-linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white&color=black"> </a>
+<a href='https://github.com/jurados' target='_blank'>
+<img src="https://img.shields.io/badge/-github-blue?style=for-the-badge&logo=github&logoColor=white&color=black"> </a>
+</center>
+:::
+
+::: {.g-col-12 .g-col-md-6 style='text-align:justify;'}
+# Hi, I'm Steve Jurado.
 I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.co" style="color:#0B351D; text-decoration: none;" target="_blank">Universidad de Antioquia</a>.
 
-Recently I am a PhD. student in Astronomy at <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.
+***Thesis:*** *"Spectral Characterization of the Host Stars HAT-P-11 and HD 179949 with the TIGRE telescope."*
 
-I was born in Manizales (Colombia), one of the coffee world capitals. I moved to Medellin to study Astronomy. Aside from my professional work in astronomy, I also like hearing histories about the development of cities and civilizations during and after the independence centuries. In 2012 I entered Conservatorio de Música de la Universidad de Caldas, where I learned the basics to play guitar, reading scores, and a little choir. I want to practice choral music again. Also, I like the Rol/RPG games as table games as video games. If you are a new party, take me into account. 
+<center>
+<button class="my_button" onclick="location.href=&#39;assets/thesis.pdf&#39;">
+DOWNLOAD THESIS
+</button>
+</center>
 
-I worked on my bachelor thesis: Spectral characterization of two host stars by the TIGRE telescope, and I was working on my project for [https://www.astroreca.org/internship-2021](RECA Internship 2021) Characterization of Progenitors and Explosions of Hydrogen-rich Supernovae
+Recently, I was accepted as a PhD student in Astronomy at the <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.
 
+<center>
+*The life is this ... I like this* (Harvey Specter)
+</center>
+
+:::
+:::
 ## Education
 
-University de Chile, Santiago de Chile, Chile \| PhD(s) in Astronomy \| March 2023 
+University de Chile, Santiago de Chile, Chile \| PhD(s) in Astronomy \| March 2023 - Present
 
-Universidad de Antioquia, Medellín, Colombia \| B.S in Astronomy \| May 2014 - June 2022
+Universidad de Antioquia, Medellín, Colombia \| B.S in Astronomy \| May 2014 - June 2022 \|
 
+## Research Interests
+:::: {.grid style='item-align:center;'}
+::: {.g-col-6 }
+- {{< fa  meteor >}} Supernovae
+- {{< fa  meteor >}} Astrochemistry
+- {{< fa  meteor >}} Stellar Evolution
+:::
+::: {.g-col-6}
+- {{< fa  code >}} Scientific Computational Simulations
+- {{< fa  code >}} Data Sciences
+- {{< fa  code >}} Machine Learning
+:::
+::::
 ## Experience
 
 Wengo Analytics \| Head Data Scientist \| April 2018 - present
 
 GeoScynce \| Chief Analyst \| Sept 2012 - April 2018
-:::
 
+## Research
+
+## More About Me
+
+I was born in Manizales (Colombia), one of the coffee world capitals. I moved to Medellin to study Astronomy. Aside from my professional work in astronomy, I also like hearing histories about the development of cities and civilizations during and after the independence centuries. In 2012 I entered Conservatorio de Música de la Universidad de Caldas, where I learned the basics to play guitar, reading scores, and a little choir. I want to practice choral music again. Also, I like the Rol/RPG games as table games as video games. If you are a new party, take me into account.
+<!--
 ### This content appears below the formatted about page content.
-::: {.grid}
+
+
+::: grid
 ::: {.g-col-12 .g-col-md-5 .g-start-md-2}
 # Data Visualization
 
-- Blog post 1
-- Blog post 2
-- Blog post 3
+-   Blog post 1
+-   Blog post 2
+-   Blog post 3
 :::
 
 ::: {.g-col-12 .g-col-md-5}
 # Stats/ML
 
-- This div...
-- ...required...
-- ...no offset (it's still in the first row)
-
+-   This div...
+-   ...required...
+-   ...no offset (it's still in the first row)
 :::
 :::
+-->
