@@ -61,11 +61,6 @@ Recently, I was accepted as a PhD student in Astronomy at the <a href="https://d
 
 :::
 :::
-## Education
-
-University de Chile, Santiago de Chile, Chile \| PhD(s) in Astronomy \| March 2023 - Present
-
-Universidad de Antioquia, Medellín, Colombia \| B.S in Astronomy \| May 2014 - June 2022 \|
 
 ## Research Interests
 :::: {.grid style='item-align:center;'}
@@ -80,17 +75,9 @@ Universidad de Antioquia, Medellín, Colombia \| B.S in Astronomy \| May 2014 - 
 - {{< fa  code >}} Machine Learning
 :::
 ::::
-## Experience
-
-Wengo Analytics \| Head Data Scientist \| April 2018 - present
-
-GeoScynce \| Chief Analyst \| Sept 2012 - April 2018
-
+<!--
 ## Research
-
-## More About Me
-
-I was born in Manizales (Colombia), one of the coffee world capitals. I moved to Medellin to study Astronomy. Aside from my professional work in astronomy, I also like hearing histories about the development of cities and civilizations during and after the independence centuries. In 2012 I entered Conservatorio de Música de la Universidad de Caldas, where I learned the basics to play guitar, reading scores, and a little choir. I want to practice choral music again. Also, I like the Rol/RPG games as table games as video games. If you are a new party, take me into account.
+-->
 <!--
 ### This content appears below the formatted about page content.
 

@@ -1,13 +1,16 @@
 project:
   type: website
-
+  resources:
+    - "assets/"
+  output-dir: docs
 website:
   title: "Jurados"
+  site-url: https://www.jurados.github.io
   description: "This is Steve Jurado's personal blog"
   page-footer: 
     center:
       - icon: github
-        href: https://github.com/
+        href: https://github.com/jurados
       - icon: twitter
         href: https://twitter.com/SteveJurado
       - icon: facebook
@@ -22,8 +25,11 @@ website:
         href: blog.qmd
       - text: Vitae
         href: vitae.qmd
+      - text: My Journal
+        href: journal.qmd
 format:
   html:
+    link-external-newwindow: true
     theme: theme.scss
     css: styles.css
 
