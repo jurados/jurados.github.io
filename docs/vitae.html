@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="vitae.css">
+<link rel="stylesheet" href="assets/css/vitae.css">
 </head>
 
 <body class="nav-fixed">
@@ -87,13 +88,24 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./blog.html">
  <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fa-solid-book-open--astrophysics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><i class="fa-solid fa-book-open" aria-label="book-open"></i> Astrophysics</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-fa-solid-book-open--astrophysics">    
+        <li>
+    <a class="dropdown-item" href="./supernovae.html">
+ <span class="dropdown-text">Supernova</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./vitae.html" aria-current="page">
- <span class="menu-text">Vitae</span></a>
+ <span class="menu-text"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./journal.html">
- <span class="menu-text">My Journal</span></a>
+ <span class="menu-text"><i class="fa-solid fa-address-book" aria-label="address-book"></i> My Personal Journal</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -117,10 +129,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="columns page-columns page-full">
 <div class="no-row-height column-margin column-container"><div class="column" style="width:100%;">
 <center>
-<a href="https://jurados.github.io" target="_blank"> <img src="profile.png" class="img-fluid" style="width:80.0%"> </a>
+<p><a href="https://jurados.github.io" target="_blank"> <img src="profile.png" class="img-fluid" style="width:80.0%"> </a></p>
 <p style="color:black; font-size:20px">
-Steve Jurado
-</p>
+</p><p>Steve Jurado</p>
+<p></p>
 </center>
 <center>
 <span style="font-size: 1.5em;"> <a href="https://jurados.github.io" target="_blank"><i class="fa fa-home"></i></a> <a href="https://github.com/jurados" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://twitter.com/SteveJurado" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.facebook.com/steve.juradopinilla" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -129,7 +141,7 @@ Steve Jurado
 <section id="download" class="level3">
 <h3 class="anchored" data-anchor-id="download">Download</h3>
 <center>
-<a href="assets/cv_español.pdf" target="_blank"><img src="https://img.shields.io/badge/-Espa%C3%B1ol-blue?style=for-the-badge&amp;color=black"></a> <a href="assets/cv_english.pdf" target="_blank"><img src="https://img.shields.io/badge/-English-blue?style=for-the-badge&amp;color=black"></a>
+<a href="assets/docs/cv_español.pdf" target="_blank"><img src="https://img.shields.io/badge/-Espa%C3%B1ol-blue?style=for-the-badge&amp;color=black"></a> <a href="assets/docs/cv_english.pdf" target="_blank"><img src="https://img.shields.io/badge/-English-blue?style=for-the-badge&amp;color=black"></a>
 </center>
 </section>
 <section id="languages" class="level3">
@@ -161,7 +173,6 @@ Steve Jurado
 </div><div class="column" style="width:70%;">
 <!-- Functions -->
 <!--
-
 ::: {.cell}
 
 :::
@@ -176,6 +187,13 @@ Steve Jurado
 </section>
 </div>
 </div>
+<!--
+<p style="text-align:justify">
+
+Professional astronomer with a seven-semester chemistry degree and interests in natural and exact sciences, particularly astrophysics, mathematics, chemistry, and computer science, as well as work as a data scientist. Experience as a teacher of secondary basic education and higher education teaching physics, mathematics, and chemistry. Knowledgeable in conducting research and scientific communication. Group management skills, the handling of programs such as Python, SQL, and R, the handling of office automation tools, and the capacity and ability to simplify complex knowledge. A professional who excels at active listening, assertive communication, responsibility, planning, sensitivity to guidelines, organization, quality focus, activity control, learning and professional development, and professional analysis and problem solving. 
+
+</p>
+-->
 <section id="fa-graduation-cap-education" class="level2">
 <h2 class="anchored" data-anchor-id="fa-graduation-cap-education"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> <strong>Education</strong></h2>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Universidad de Chile | Ph.D student in Astronomy | March 2023 - Present</p>
@@ -188,20 +206,24 @@ Steve Jurado
 <h2 class="anchored" data-anchor-id="research-interest"><i class="fa-solid fa-meteor"></i> <strong>Research Interest</strong></h2>
 <div class="grid">
 <div class="g-col-6">
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Supernovae <br> <i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Astrochemistry <br> <i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Stellar Spectroscopy</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Supernovae</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Astrochemistry</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Stellar Spectroscopy</p>
 </div>
 <div class="g-col-6">
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Scientific Computational Simulations <br> <i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Data Sciences <br> <i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Machine Learning</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Scientific Computational Simulations</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Data Sciences</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Machine Learning</p>
 </div>
 </div>
 </section>
 <section id="fa-brain-research-experience" class="level2">
 <h2 class="anchored" data-anchor-id="fa-brain-research-experience"><i class="fa-solid fa-brain" aria-label="brain"></i> <strong>Research Experience</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> RECA Internship 2021 | <em>Characterization of progenitors and explosions of hydrogen-Present rich supernovae</em> | Dr.&nbsp;Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) | Virtual, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> RECA Internship 2021 | Characterization of progenitors and explosions of hydrogen-Present rich supernovae | Dr.&nbsp;Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) | Virtual, Colombia.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Junior Researcher 2022 | Fundación Universidad del Valle (Cali, Colombia | Grupo Present de Astronomía y Astrofísica Macondo (GAAM) | Dr.&nbsp;Lauren Flor-Torres and Dr.&nbsp;Camilo Delgado-Correal.</p>
 <p style="text-align:justify">
-<em>100 Hours 100 Schools Leader in the project of Las Cumbres Observatory by International Astronomical Search Collaboration (IASC) “100 Hours 100 Schools”. In this we counts with 90 minutes will allow our to take 7-9 images depending on the object we are imaging. This program is designed for examining and discussing images of deep sky objects, planets and minor planet bodies (asteroids and comets) with school students.</em>
-</p>
+</p><p><em>100 Hours 100 Schools Leader in the project of Las Cumbres Observatory by International Astronomical Search Collaboration (IASC) “100 Hours 100 Schools”. In this we counts with 90 minutes will allow our to take 7-9 images depending on the object we are imaging. This program is designed for examining and discussing images of deep sky objects, planets and minor planet bodies (asteroids and comets) with school students.</em></p>
+<p></p>
 </section>
 <section id="fa-code-technical-skills" class="level2">
 <h2 class="anchored" data-anchor-id="fa-code-technical-skills"><i class="fa-solid fa-code" aria-label="code"></i> <strong>Technical Skills</strong></h2>
@@ -231,9 +253,9 @@ Steve Jurado
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA) | Speaker, Tunja, Colombia.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | International Virtual Courses (IVC), Introduction to Astrophysical Modeling and Computational | Institute Teknologi Bandung, Indonesia.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Astronomy Python Bootcamp, Red de Estudiantes Colombianos de Astronomía.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | 1<sup>st</sup> Latinoamerican School of Gaia | Universidad de Antioquia, Medellín,Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | <a href="https://sn-crisp.github.io/CRISP2021/">Correcting Reddening Intelligently for Supernova Probes (CRISP)</a>, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) | Virtual .</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | <a href="https://sites.google.com/view/supervirtual2021">SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster)</a> | Virtual.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | 1st Latinoamerican School of Gaia | Universidad de Antioquia, Medellín,Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Correcting Reddening Intelligently for Supernova Probes (CRISP), Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) | Virtual .</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster) | Virtual.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Escuela de Verano en Astrofísica (EVA) 2021 | Institute of Radioastronomy and Astrophysics (IRyA), UNAM (México), Virtual, México.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2019 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA) | Attendant, Medellín, Colombia.</p>
 </section>
@@ -253,7 +275,7 @@ Steve Jurado
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2020/02 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2015/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2014/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><small><em>Updated on: 2023-02-18</em></small></p>
+<p><small><em>Updated on: 2023-02-19</em></small></p>
 
 
 </section>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jurados - Supernova</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/css/astro_notes.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Jurados</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fa-solid-book-open--astrophysics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><i class="fa-solid fa-book-open" aria-label="book-open"></i> Astrophysics</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-fa-solid-book-open--astrophysics">    
+        <li>
+    <a class="dropdown-item" href="./supernovae.html">
+ <span class="dropdown-text">Supernova</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./vitae.html">
+ <span class="menu-text"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./journal.html">
+ <span class="menu-text"><i class="fa-solid fa-address-book" aria-label="address-book"></i> My Personal Journal</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Supernova</h2>
+   
+  <ul>
+  <li><a href="#constants" id="toc-constants" class="nav-link active" data-scroll-target="#constants"><strong>Constants</strong></a></li>
+  <li><a href="#abrevations" id="toc-abrevations" class="nav-link" data-scroll-target="#abrevations"><strong>Abrevations</strong></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>Introduction</strong></a>
+  <ul class="collapse">
+  <li><a href="#a-little-bit-of-history" id="toc-a-little-bit-of-history" class="nav-link" data-scroll-target="#a-little-bit-of-history">A little bit of history</a></li>
+  <li><a href="#first-approach" id="toc-first-approach" class="nav-link" data-scroll-target="#first-approach">First Approach</a></li>
+  <li><a href="#bases-fisica-de-las-clasificacion" id="toc-bases-fisica-de-las-clasificacion" class="nav-link" data-scroll-target="#bases-fisica-de-las-clasificacion">Bases Fisica de las clasificacion</a></li>
+  </ul></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados">Resultados</a>
+  <ul class="collapse">
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Supernova</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="constants" class="level2">
+<h2 class="anchored" data-anchor-id="constants"><strong>Constants</strong></h2>
+<p>sasas</p>
+</section>
+<section id="abrevations" class="level2">
+<h2 class="anchored" data-anchor-id="abrevations"><strong>Abrevations</strong></h2>
+<p>sasa</p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
+<section id="a-little-bit-of-history" class="level3">
+<h3 class="anchored" data-anchor-id="a-little-bit-of-history">A little bit of history</h3>
+<p>According to the Sung Dynasty Annals (China), it was possible to observer one “<em>guest star</em>” so brilliant for 23 days, and just two days after this ceased to be visible. This event could occur at July 4 of 1514 b.c.e [2], to northeast of Aldebaran constellation, the <em>Taurus’ eye</em>, currently, it is known as <strong>Crab Nebula</strong>. In addition to the previous guest star, in our <strong>Milky Way</strong> at least has been observed others two supernovae. The first one was in 1572 b.c.e in Cassiopeia constellation observed by Tycho Brahe and the second one was in 1604 b.c.e in Ophiuchus constellation studied by Johannes Kepler. This does not mean that outside our galaxy no more “guest stars” have been seen, the closest ones were observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda. was observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda whose peak intensity was between 6 - 7 in magnitude [2]. peak intensity was between 6 - 7 in magnitude [2]. The fact that the “guest stars” are almost as bright as the host galaxy means that they are too energetic physical phenomenon. The fact that the guest stars are almost as bright as the host galaxy means that they are overly energetic physical phenomena. For this reason, the astronomer Frist Zwicky named them Supernovae (Supernovae), SNe [2].</p>
+</section>
+<section id="first-approach" class="level3">
+<h3 class="anchored" data-anchor-id="first-approach">First Approach</h3>
+<p>Massive stars, larger than 10 times the solar mass (&amp; 10M ) have a catastrophic end through an explosion that sends their outer layers outwards at a certain an explosion that sends their outer layers outward at a certain percentage of the speed of light. light. For a star with a mass similar to the Sun, there is an equilibrium between the gravity due to the mass that tries to compress the star and the gravity that tries to compress the star. that tries to compress the star and the pressure caused by the heat that tries to expand it [2]. The stars during their life cycle generate a physical process called nuclear fusion, which is based on the creation of new elements from other elements through collisions between nuclear collisions, In this way, hydrogen is transformed into helium, helium into carbon, carbon into neon, neon into oxygen, oxygen into oxygen, and carbon into neon. Oxygen, Oxygen into Silicon and Silicon into Iron. A star can fuse Hydrogen to Helium for millions or billions of years millions or billions of years, but the time it takes to fuse Silicon into Iron can take as little as a few days, since even a few days may days, since up to Iron all fusion reactions produce energy in the form of heat, but the energy to fuse Silicon into Iron can take only a few days. However, the energy to fuse Iron into heavier elements takes its energy from the star itself [2]. from the star itself [2]. The Iron core collapses in a few thousandths of a second, due to the immense gravity, from a few thousands of kilometers to a compressed mass sphere of only a few kilometers, so that the outer so that the star’s outer capabilities are precipitated downward. This generates two things: first, a first, a rebound that sends the outer layers of the star out, and second, a large amount of neutrinos are released [2]. secondly a large amount of neutrinos is released [2]. As the star explodes, the expanding gas is so hot that it can even generate fusion processes, thus creating elements as heavy as fusion processes, thus creating elements as heavy as uranium, so that more radiative elements are created in the explosion. are created in the explosion. The expanding gas is what is known as the SN remnant, which will expand for hundreds of thousands of years. will expand for hundreds of thousands of years and eventually cool down to become so thin that it will fuse with the tenuous gas between the tenuous gas between the stars; sometimes the remnant gas mixes with the gas that is forming new stars [2]. forming new stars [2].</p>
+<p>When the material ejected by the SN meets the gas that already existed around the star, shock waves are created. shock waves are created. Within these shock waves the ejected gas slows down, compresses and heats up to millions of degrees. millions of degrees. The high temperatures of the gas mean that the atoms are moving very fast, leading to collisions. which leads to very energetic collisions between them. The collisions are so energetic that they knock the electrons electrons completely out of the atoms, i.e., the atoms become ionized. When the gas is so hot, the atoms bounce off each other generating X-rays [2]. As the remnant emits X-rays it loses energy, the loss of energy causing it to cool after tens of thousands of years to a few thousand years. tens of thousands of years to a few thousand degrees [2]. In places with low densities but hot gas, such as the remnant of an SN such as the remnant of an old SN, the emission lines typically seen are excited and ionized forms of Hydrogen, Oxygen, Nitrogen, Nitrogen, Nitrous of Hydrogen, Oxygen, Nitrogen, Sulfur and other types of atoms. This can make the characteristic colors to our eyes the characteristic colors of SNs can be red or green. the star’s core collapses. The heat and pressure are so high from this explosion that fusion can take place. can take place. The expanding gas normally cools, but these decaying radiative elements produce gamma rays. produce gamma rays. The gas absorbs this radiation, heating it. After one or two weeks much of the light of the light emitted by the SN remnant is due to heating from radioactive decay [2]. As time progresses, the remnant continues to expand. During the first stage of its During the first stage of its lifetime, the gas in the remnant is dense and therefore sufficiently opaque to reveal only the outer part of the expanding cloud. outer part of the expanding cloud. But as it expands, its volume increases causing its average density to decrease. decreases and eventually the gas becomes transparent to visible light. It can then be can be seen inside the remnant, and after a few years the spinning pulsar becomes invisible. The gas is diffuse to our eyes with a bluish hue. However, the gas in the outer parts of the remnant has been compressed into thin filaments and ribbons. compressed into thin filaments and ribbons by the shock wave, and is dominated by linear emission. This gas glows partially red and green[2]. Over thousands of years, the pulsar-driven gas from the inner part of the nebula has mixed with the gas between the stars. mixed with the gas between the stars in the Galaxy. The remnant is no longer a discrete entity, but has merged with the interstellar medium. has merged with the interstellar medium. The stars that form from these regions of gas and dust are enriched by the SN explosion. enriched by the explosion of SN: heavy elements such as Calcium, Silicon, Uranium Iron and many other seeds of nascent stars [2].</p>
+</section>
+<section id="bases-fisica-de-las-clasificacion" class="level3">
+<h3 class="anchored" data-anchor-id="bases-fisica-de-las-clasificacion">Bases Fisica de las clasificacion</h3>
+<p>En general las explosiones de SNe son teroicamente el resultado de alguno de los dos siguientes modelos: la explosión termonuclear de una enana blanca ó un fenomeno explosivo siguiente al colapso terminal del núcleo de una estrella masiva [1]. Sin embargo existen ambiguedades para algunas subclases de las SNe Ia, Ib y Ic para las cuales solo hay evidencia circunstancial localizada y lo mismo ocurre para las SNe de tipo IIn (resultado de la explosión de una enana blanca que interactua con material circumstancial). Los principales tipos de SNe se puede ver en 1.</p>
+<p>The main classes of SNe can be defined based on the spectral properties of the peak</p>
+</section>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<p>La forma como se puede transformar las magnitudes (brillo) en flujo esta dado por la expresion</p>
+<p><span class="math display">\[
+m - m_{z} = -2.5\log{\frac{F}{F_{z}}}
+\]</span></p>
+<p>donde m es la magnitud que de la SN en un filtro especifico, mz es la magnitud cero para el filtro especifico, F es el flujo que tendría la SN para la magnitud en un filtro especifico y Fz es el flujo a magnitud cero para la SN en un filtro especifico. Utilizando los datos de 2se puede hallar el flujo a partir de las magnitudes para cada unos de los filtron de la fotometría de Jhonson tomando como referencia los datos del flujo a magnitud cero</p>
+<section id="referencias" class="level3">
+<h3 class="anchored" data-anchor-id="referencias">Referencias</h3>
+<p>[1] Avishay Gal-Yam. Observational and Physical Classification of Supernovae, pages 195–237. Springer International Publishing, Cham, 2017. [2] Sonoma State University. Introduction to supernovae. Technical report, NASA Education, 2017.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/www\.jurados\.github\.io/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jurados">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/SteveJurado">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/steve.juradopinilla">
+      <i class="bi bi-facebook" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/astrojurados/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>

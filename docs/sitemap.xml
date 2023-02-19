@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.jurados.github.io/supernovae.html</loc>
+    <lastmod>2023-02-19T21:56:03.395Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.jurados.github.io/posts/new_blog_post/post.html</loc>
-    <lastmod>2023-02-18T21:51:42.752Z</lastmod>
+    <lastmod>2023-02-19T15:06:25.602Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/posts/welcome/index.html</loc>
-    <lastmod>2023-02-18T21:51:43.368Z</lastmod>
+    <lastmod>2023-02-19T15:06:26.206Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2023-02-18T21:51:43.984Z</lastmod>
+    <lastmod>2023-02-19T15:06:27.022Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/blog.html</loc>
-    <lastmod>2023-02-18T21:51:44.884Z</lastmod>
+    <lastmod>2023-02-19T19:08:13.779Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/journal.html</loc>
-    <lastmod>2023-02-18T21:51:45.660Z</lastmod>
+    <lastmod>2023-02-19T21:56:06.795Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/vitae.html</loc>
-    <lastmod>2023-02-18T21:51:47.853Z</lastmod>
+    <lastmod>2023-02-19T21:34:07.189Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/index.html</loc>
-    <lastmod>2023-02-18T21:51:48.405Z</lastmod>
+    <lastmod>2023-02-19T21:32:41.257Z</lastmod>
   </url>
 </urlset>

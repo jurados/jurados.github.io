@@ -19,65 +19,70 @@ page-layout: full
 #      text: Facebook
 #      href: https://www.facebook.com/steve.juradopinilla
 ---
+
+```{=html}
 <!--
 About this blog
 
 \### This content appears above the formatted about page content.
 -->
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6 style='item-align:center;'}
+```
+::: grid
+::: {.g-col-12 .g-col-md-6 style="item-align:center;"}
 <center>
-![](profile.png){width=500px height=500px fig-align="center"}
 
-<a href='https://www.facebook.com/steve.juradopinilla' target='_blank'><img src="https://img.shields.io/badge/-facebook-blue?style=for-the-badge&logo=Facebook&logoColor=white&color=black"> </a>
-<a href='https://twitter.com/SteveJurado' target='_blank'>
-<img src="https://img.shields.io/badge/-twitter-blue?style=for-the-badge&logo=twitter&logoColor=white&color=black"> </a>
-<a href='https://www.linkedin.com/in/astrojurados/' target='_blank'>
-<img src="https://img.shields.io/badge/-linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white&color=black"> </a>
-<a href='https://github.com/jurados' target='_blank'>
-<img src="https://img.shields.io/badge/-github-blue?style=for-the-badge&logo=github&logoColor=white&color=black"> </a>
+![](profile.png){width="500px" height="500px" fig-align="center"}
+
+<a href='https://www.facebook.com/steve.juradopinilla' target='_blank'><img src="https://img.shields.io/badge/-facebook-blue?style=for-the-badge&amp;logo=Facebook&amp;logoColor=white&amp;color=black"/> </a> <a href='https://twitter.com/SteveJurado' target='_blank'> <img src="https://img.shields.io/badge/-twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white&amp;color=black"/> </a> <a href='https://www.linkedin.com/in/astrojurados/' target='_blank'> <img src="https://img.shields.io/badge/-linkedin-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;color=black"/> </a> <a href='https://github.com/jurados' target='_blank'> <img src="https://img.shields.io/badge/-github-blue?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;color=black"/> </a>
+
 </center>
 :::
 
-::: {.g-col-12 .g-col-md-6 style='text-align:justify;'}
+::: {.g-col-12 .g-col-md-6 style="text-align:justify;"}
 # Hi, I'm Steve Jurado.
-I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.co" style="color:#0B351D; text-decoration: none;" target="_blank">Universidad de Antioquia</a>.
+
+I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.co" style="color:#026937; text-decoration: none;" target="_blank">Universidad de Antioquia</a>.
 
 ***Thesis:*** *"Spectral Characterization of the Host Stars HAT-P-11 and HD 179949 with the TIGRE telescope."*
 
 <center>
-<button class="my_button" onclick="location.href=&#39;assets/thesis.pdf&#39;">
+
+<button class="my_button" onclick="location.href=&#39;assets/docs/thesis.pdf&#39;">
+
 DOWNLOAD THESIS
+
 </button>
+
 </center>
 
 Recently, I was accepted as a PhD student in Astronomy at the <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.
 
-<center>
-*The life is this ... I like this* (Harvey Specter)
-</center>
-
+<center>*The life is this ... I like this* (Harvey Specter)</center>
 :::
 :::
 
 ## Research Interests
-:::: {.grid style='item-align:center;'}
-::: {.g-col-6 }
-- {{< fa  meteor >}} Supernovae
-- {{< fa  meteor >}} Astrochemistry
-- {{< fa  meteor >}} Stellar Evolution
+
+::: {.grid style="item-align:center;"}
+::: g-col-6
+-   {{< fa meteor >}} Supernovae
+-   {{< fa meteor >}} Astrochemistry
+-   {{< fa meteor >}} Stellar Evolution
 :::
-::: {.g-col-6}
-- {{< fa  code >}} Scientific Computational Simulations
-- {{< fa  code >}} Data Sciences
-- {{< fa  code >}} Machine Learning
+
+::: g-col-6
+-   {{< fa code >}} Scientific Computational Simulations
+-   {{< fa code >}} Data Sciences
+-   {{< fa code >}} Machine Learning
 :::
-::::
+:::
+
+```{=html}
 <!--
 ## Research
 -->
+```
+```{=html}
 <!--
 ### This content appears below the formatted about page content.
 
@@ -100,3 +105,4 @@ Recently, I was accepted as a PhD student in Astronomy at the <a href="https://d
 :::
 :::
 -->
+```
