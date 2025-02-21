@@ -10,6 +10,9 @@
   cursor:pointer;
   margin-top:0em;
   margin-bottom: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero-heading{
@@ -17,4 +20,6 @@
   text-align: justify;
   display: table-cell;
   vertical-align: middle;
+  color: #000 !important;
+  background-color:#000 !important;
 }
