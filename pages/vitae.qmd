@@ -118,7 +118,7 @@ create_section <- function(cv_data, section_name){
 
 <!-- Main content -->
 
-# Bryam Steve Pinilla Jurado (Steve Jurado)
+# Bryam Steve Pinilla Jurado
 
 ## Ph.D(c) in Astronomy
 :::
