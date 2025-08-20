@@ -1,0 +1,117 @@
+---
+title: 'Supernova'
+toc: true
+toc-title: 'Supernova'
+toc-location: left
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format: 
+  html: 
+    css: assets/css/astro_notes.css
+---
+## **Constants**
+sasas
+
+## **Abrevations**
+sasa
+
+## **Introduction**
+
+### A little bit of history 
+
+According to the Sung Dynasty Annals (China), it was possible to observer one "*guest star*" so brilliant for 23 days, and just two days after this ceased to be visible. This event could occur at July 4 of 1514 b.c.e [2], to northeast of Aldebaran constellation, the *Taurus' eye*, currently, it is known as **Crab Nebula**. In addition to the previous guest star, in our **Milky Way** at least has been observed others two supernovae. The first one was in 1572 b.c.e in Cassiopeia constellation observed by Tycho Brahe and the second one was in 1604 b.c.e in Ophiuchus constellation studied by Johannes Kepler.
+This does not mean that outside our galaxy no more "guest stars" have been seen, the closest ones were observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda.
+was observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda whose peak intensity was between 6 - 7 in magnitude [2].
+peak intensity was between 6 - 7 in magnitude [2].
+The fact that the "guest stars" are almost as bright as the host galaxy means that they are too energetic physical phenomenon.
+The fact that the guest stars are almost as bright as the host galaxy means that they are overly energetic physical phenomena. For this reason, the astronomer Frist Zwicky named them Supernovae
+(Supernovae), SNe [2].
+
+### First Approach
+
+Massive stars, larger than 10 times the solar mass (& 10M ) have a catastrophic end through an explosion that sends their outer layers outwards at a certain
+an explosion that sends their outer layers outward at a certain percentage of the speed of light.
+light. For a star with a mass similar to the Sun, there is an equilibrium between the gravity due to the mass that tries to compress the star and the gravity that tries to compress the star.
+that tries to compress the star and the pressure caused by the heat that tries to expand it [2].
+The stars during their life cycle generate a physical process called nuclear fusion,
+which is based on the creation of new elements from other elements through collisions between nuclear collisions,
+In this way, hydrogen is transformed into helium, helium into carbon, carbon into neon, neon into oxygen, oxygen into oxygen, and carbon into neon.
+Oxygen, Oxygen into Silicon and Silicon into Iron. A star can fuse Hydrogen to Helium for millions or billions of years
+millions or billions of years, but the time it takes to fuse Silicon into Iron can take as little as a few days, since even a few days may
+days, since up to Iron all fusion reactions produce energy in the form of heat, but the energy to fuse Silicon into Iron can take only a few days.
+However, the energy to fuse Iron into heavier elements takes its energy from the star itself [2].
+from the star itself [2].
+The Iron core collapses in a few thousandths of a second, due to the immense gravity, from a few
+thousands of kilometers to a compressed mass sphere of only a few kilometers, so that the outer
+so that the star's outer capabilities are precipitated downward. This generates two things: first, a
+first, a rebound that sends the outer layers of the star out, and second, a large amount of neutrinos are released [2].
+secondly a large amount of neutrinos is released [2].
+As the star explodes, the expanding gas is so hot that it can even generate fusion processes, thus creating elements as heavy as
+fusion processes, thus creating elements as heavy as uranium, so that more radiative elements are created in the explosion.
+are created in the explosion. The expanding gas is what is known as the SN remnant, which will expand for hundreds of thousands of years.
+will expand for hundreds of thousands of years and eventually cool down to become so thin that it will fuse with the tenuous gas between
+the tenuous gas between the stars; sometimes the remnant gas mixes with the gas that is forming new stars [2].
+forming new stars [2].
+
+When the material ejected by the SN meets the gas that already existed around the star, shock waves are created.
+shock waves are created. Within these shock waves the ejected gas slows down, compresses and heats up to millions of degrees.
+millions of degrees. The high temperatures of the gas mean that the atoms are moving very fast, leading to collisions.
+which leads to very energetic collisions between them. The collisions are so energetic that they knock the electrons
+electrons completely out of the atoms, i.e., the atoms become ionized. When the gas is so hot,
+the atoms bounce off each other generating X-rays [2].
+As the remnant emits X-rays it loses energy, the loss of energy causing it to cool after tens of thousands of years to a few thousand years.
+tens of thousands of years to a few thousand degrees [2]. In places with low densities but hot gas, such as the remnant of an SN
+such as the remnant of an old SN, the emission lines typically seen are excited and ionized forms of Hydrogen, Oxygen, Nitrogen, Nitrogen, Nitrous
+of Hydrogen, Oxygen, Nitrogen, Sulfur and other types of atoms. This can make the characteristic colors
+to our eyes the characteristic colors of SNs can be red or green.
+the star's core collapses. The heat and pressure are so high from this explosion that fusion can take place.
+can take place. The expanding gas normally cools, but these decaying radiative elements produce gamma rays.
+produce gamma rays. The gas absorbs this radiation, heating it. After one or two weeks much of the light
+of the light emitted by the SN remnant is due to heating from radioactive decay [2].
+As time progresses, the remnant continues to expand. During the first stage of its
+During the first stage of its lifetime, the gas in the remnant is dense and therefore sufficiently opaque to reveal only the outer part of the expanding cloud.
+outer part of the expanding cloud. But as it expands, its volume increases causing its average density to decrease.
+decreases and eventually the gas becomes transparent to visible light. It can then be
+can be seen inside the remnant, and after a few years the spinning pulsar becomes invisible. The gas is
+diffuse to our eyes with a bluish hue. However, the gas in the outer parts of the remnant has been compressed into thin filaments and ribbons.
+compressed into thin filaments and ribbons by the shock wave, and is dominated by linear emission. This
+gas glows partially red and green[2].
+Over thousands of years, the pulsar-driven gas from the inner part of the nebula has mixed with the gas between the stars.
+mixed with the gas between the stars in the Galaxy. The remnant is no longer a discrete entity, but has merged with the interstellar medium.
+has merged with the interstellar medium. The stars that form from these regions of gas and dust are enriched by the SN explosion.
+enriched by the explosion of SN: heavy elements such as Calcium, Silicon, Uranium Iron and many
+other seeds of nascent stars [2].
+
+### Bases Fisica de las clasificacion
+
+En general las explosiones de SNe son teroicamente el resultado de alguno de los dos siguientes modelos:
+la explosión termonuclear de una enana blanca ó un fenomeno explosivo siguiente al colapso terminal del
+núcleo de una estrella masiva [1]. Sin embargo existen ambiguedades para algunas subclases de las SNe Ia, Ib
+y Ic para las cuales solo hay evidencia circunstancial localizada y lo mismo ocurre para las SNe de tipo IIn
+(resultado de la explosión de una enana blanca que interactua con material circumstancial). Los principales
+tipos de SNe se puede ver en 1.
+
+The main classes of SNe can be defined based on the spectral properties of the peak
+
+## Resultados
+
+La forma como se puede transformar las magnitudes (brillo) en flujo esta dado por la expresion
+
+$$
+m - m_{z} = -2.5\log{\frac{F}{F_{z}}}
+$$
+
+donde m es la magnitud que de la SN en un filtro especifico, mz es la magnitud cero para el filtro especifico,
+F es el flujo que tendría la SN para la magnitud en un filtro especifico y Fz es el flujo a magnitud cero para
+la SN en un filtro especifico. Utilizando los datos de 2se puede hallar el flujo a partir de las magnitudes para
+cada unos de los filtron de la fotometría de Jhonson tomando como referencia los datos del flujo a magnitud
+cero
+
+### Referencias
+
+[1] Avishay Gal-Yam. Observational and Physical Classification of Supernovae, pages 195–237. Springer
+International Publishing, Cham, 2017.
+[2] Sonoma State University. Introduction to supernovae. Technical report, NASA Education, 2017.
