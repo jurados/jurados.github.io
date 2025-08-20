@@ -30,7 +30,7 @@ website:
 format:
   html:
     link-external-newwindow: true
-    theme: styles/theme_dark.scss
+    theme: styles/theme_light.scss
     css: styles/styles.css
 
 editor: visual
