@@ -2,8 +2,8 @@
 title: ""
 format: 
   html:
-    theme: journal
-    css: assets/css/vitae.css
+    #theme: styles/theme_light.scss
+    css: css/vitae.css
 editor: visual
 knitr:
   opts_chunk: 
@@ -18,7 +18,7 @@ knitr:
 ::: {.column .aside width="100%"}
 <center>
 
-<a href='https://jurados.github.io' target='_blank'> ../assets/images/profile </a>
+<a href='https://jurados.github.io' target='_blank'> <img src="/images/profile.png"/> </a>
 
 <p style="color:black; font-size:20px">
 
@@ -139,7 +139,7 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 {{< fa angle-double-right >}} Universidad de Antioquia, Medellín, Colombia \| Bachelor of Science in Astronomy \| May 2014 - June 2022
 
-<center>**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of Dr. Lauren Flor-Torres <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'><sup>{{< ai google-scholar >}}</sup></a> & Dr. Camilo Delgado-Correal<a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'><sup>{{< ai google-scholar >}}</sup></a>.</center>
+<center>**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'>Dr. Lauren Flor-Torres</a> & <a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'> Dr. Camilo Delgado-Correal</a>.</center>
 
 ## <i class="fa-solid fa-meteor"></i> **Research Interest**
 
