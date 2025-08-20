@@ -3,7 +3,7 @@ title: ""
 format: 
   html:
     #theme: styles/theme_light.scss
-    css: css/vitae.css
+    css: /assets/css/vitae.css
 editor: visual
 knitr:
   opts_chunk: 
@@ -14,11 +14,11 @@ knitr:
 
 <!-- Sidebar -->
 
-:::::: columns
+::::::: columns
 ::: {.column .aside width="100%"}
 <center>
 
-<a href='https://jurados.github.io' target='_blank'> <img src="/images/profile.png"/> </a>
+<a href='https://jurados.github.io' target='_blank'> <img src="/assets/images/profile.png" style="widht:150px;" width="50" height="100"/> </a>
 
 <p style="color:black; font-size:20px">
 
@@ -57,6 +57,9 @@ Steve Jurado
 :::
 
 ::: {.column width="5%"}
+:::
+
+::: columns
 :::
 
 ::: {.column width="70%"}
@@ -115,13 +118,11 @@ create_section <- function(cv_data, section_name){
 
 <!-- Main content -->
 
-# Bryam Steve Pinilla Jurado
+# Bryam Steve Pinilla Jurado (Steve Jurado)
 
-## (Steve Jurado)
-
-## Ph.D(c) in Astronomy {style="border-bottom: 0px"}
+## Ph.D(c) in Astronomy
 :::
-::::::
+:::::::
 
 ```{=html}
 <!--
