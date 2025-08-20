@@ -14,11 +14,11 @@ knitr:
 
 <!-- Sidebar -->
 
-::: columns
+:::::: columns
 ::: {.column .aside width="100%"}
 <center>
 
-<a href='https://jurados.github.io' target='_blank'> ![](profile.png){width="80%"} </a>
+<a href='https://jurados.github.io' target='_blank'> ../assets/images/profile </a>
 
 <p style="color:black; font-size:20px">
 
@@ -117,10 +117,13 @@ create_section <- function(cv_data, section_name){
 
 # Bryam Steve Pinilla Jurado
 
-## Ph.D(s) in Astronomy {style="border-bottom: 0px"}
-:::
-:::
+## (Steve Jurado)
 
+## Ph.D(c) in Astronomy {style="border-bottom: 0px"}
+:::
+::::::
+
+```{=html}
 <!--
 <p style="text-align:justify">
 
@@ -128,21 +131,19 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 </p>
 -->
+```
+
 ## {{< fa graduation-cap >}} **Education**
 
-{{< fa angle-double-right >}} Universidad de Chile | Ph.D student in Astronomy | March 2023 - Present
+{{< fa angle-double-right >}} Universidad de Chile \| Ph.D student in Astronomy \| March 2023 - Present
 
-{{< fa angle-double-right >}} Universidad de Antioquia, Medellín, Colombia | Bachelor of Science in Astronomy | May 2014 - June 2022
+{{< fa angle-double-right >}} Universidad de Antioquia, Medellín, Colombia \| Bachelor of Science in Astronomy \| May 2014 - June 2022
 
-<center>
-
-**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of Dr. Lauren Flor-Torres <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'><sup>{{< ai google-scholar >}}</sup></a> & Dr. Camilo Delgado-Correal<a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'><sup>{{< ai google-scholar >}}</sup></a>.
-
-</center>
+<center>**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of Dr. Lauren Flor-Torres <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'><sup>{{< ai google-scholar >}}</sup></a> & Dr. Camilo Delgado-Correal<a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'><sup>{{< ai google-scholar >}}</sup></a>.</center>
 
 ## <i class="fa-solid fa-meteor"></i> **Research Interest**
 
-::: grid
+::::: grid
 ::: g-col-6
 {{< fa angle-double-right >}} Supernovae
 
@@ -158,13 +159,13 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 {{< fa angle-double-right >}} Machine Learning
 :::
-:::
+:::::
 
 ## {{< fa brain >}} **Research Experience**
 
-{{< fa angle-double-right >}} RECA Internship 2021 | Characterization of progenitors and explosions of hydrogen-Present rich supernovae | Dr. Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) | Virtual, Colombia.
+{{< fa angle-double-right >}} RECA Internship 2021 \| Characterization of progenitors and explosions of hydrogen-Present rich supernovae \| Dr. Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) \| Virtual, Colombia.
 
-{{< fa angle-double-right >}} Junior Researcher 2022 | Fundación Universidad del Valle (Cali, Colombia | Grupo Present de Astronomía y Astrofísica Macondo (GAAM) | Dr. Lauren Flor-Torres and Dr. Camilo Delgado-Correal.
+{{< fa angle-double-right >}} Junior Researcher 2022 \| Fundación Universidad del Valle (Cali, Colombia \| Grupo Present de Astronomía y Astrofísica Macondo (GAAM) \| Dr. Lauren Flor-Torres and Dr. Camilo Delgado-Correal.
 
 <p style="text-align:justify">
 
@@ -190,56 +191,56 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 ### Academic
 
-{{< fa angle-double-right >}} 2016 – 2022 | Teacher assistant II | Responsible for 4 hour/week how advisor for high school and basic math for graduateds of high school at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2016 – 2022 \| Teacher assistant II \| Responsible for 4 hour/week how advisor for high school and basic math for graduateds of high school at Mathematics Seminar \| Universidad de Antioquia, Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2016 – 2022 | Teacher assistant I | Responsible for 4 hour/week for 8 grade and 10 of high school, and basic math for 11 grade and graduateds of high school) at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2016 – 2022 \| Teacher assistant I \| Responsible for 4 hour/week for 8 grade and 10 of high school, and basic math for 11 grade and graduateds of high school) at Mathematics Seminar \| Universidad de Antioquia, Medellín, Colombia.
 
 ### Profesional
 
-{{< fa angle-double-right >}} 2018 – 2020 | Science Communicator and logistic assistant | We count with a mobile dome as a Planetarium where we projected differents scientific shows, specially in astronomy. Also we realized some workshops in astronomy for persons with a large variability of ages | Inmerdome, Medellín, Colombia.
+{{< fa angle-double-right >}} 2018 – 2020 \| Science Communicator and logistic assistant \| We count with a mobile dome as a Planetarium where we projected differents scientific shows, specially in astronomy. Also we realized some workshops in astronomy for persons with a large variability of ages \| Inmerdome, Medellín, Colombia.
 
 ## <i class='fa-solid fa-earth-americas'></i> **Summer Schools, Conferences & Workshops**
 
-{{< fa angle-double-right >}} 2022 | Colombian Meeting of Astronomy & Astrophysics (COCOA) | Speaker, Tunja, Colombia.
+{{< fa angle-double-right >}} 2022 \| Colombian Meeting of Astronomy & Astrophysics (COCOA) \| Speaker, Tunja, Colombia.
 
-{{< fa angle-double-right >}} 2022 | International Virtual Courses (IVC), Introduction to Astrophysical Modeling and Computational | Institute Teknologi Bandung, Indonesia.
+{{< fa angle-double-right >}} 2022 \| International Virtual Courses (IVC), Introduction to Astrophysical Modeling and Computational \| Institute Teknologi Bandung, Indonesia.
 
-{{< fa angle-double-right >}} 2022 | Astronomy Python Bootcamp, Red de Estudiantes Colombianos de Astronomía.
+{{< fa angle-double-right >}} 2022 \| Astronomy Python Bootcamp, Red de Estudiantes Colombianos de Astronomía.
 
-{{< fa angle-double-right >}} 2022 | 1st Latinoamerican School of Gaia | Universidad de Antioquia, Medellín,Colombia.
+{{< fa angle-double-right >}} 2022 \| 1st Latinoamerican School of Gaia \| Universidad de Antioquia, Medellín,Colombia.
 
-{{< fa angle-double-right >}} 2021 | Correcting Reddening Intelligently for Supernova Probes (CRISP), Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) | Virtual .
+{{< fa angle-double-right >}} 2021 \| Correcting Reddening Intelligently for Supernova Probes (CRISP), Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) \| Virtual .
 
-{{< fa angle-double-right >}} 2021 | SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster) | Virtual.
+{{< fa angle-double-right >}} 2021 \| SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster) \| Virtual.
 
-{{< fa angle-double-right >}} 2021 | Escuela de Verano en Astrofísica (EVA) 2021 | Institute of Radioastronomy and Astrophysics (IRyA), UNAM (México), Virtual, México.
+{{< fa angle-double-right >}} 2021 \| Escuela de Verano en Astrofísica (EVA) 2021 \| Institute of Radioastronomy and Astrophysics (IRyA), UNAM (México), Virtual, México.
 
-{{< fa angle-double-right >}} 2019 | Colombian Meeting of Astronomy & Astrophysics (COCOA) | Attendant, Medellín, Colombia.
+{{< fa angle-double-right >}} 2019 \| Colombian Meeting of Astronomy & Astrophysics (COCOA) \| Attendant, Medellín, Colombia.
 
 ## <i class='fas fa-book-open'></i> **Complementary Education**
 
-{{< fa angle-double-right >}} 2022 | Data Science for All (DS4A) | MinTic and Correlation One, Colombia | 375 hours.
+{{< fa angle-double-right >}} 2022 \| Data Science for All (DS4A) \| MinTic and Correlation One, Colombia \| 375 hours.
 
-{{< fa angle-double-right >}} 2020 | High dispersion spectroscopy for Astronomy and The large-scale structure of the Universe (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.
+{{< fa angle-double-right >}} 2020 \| High dispersion spectroscopy for Astronomy and The large-scale structure of the Universe (AstroTwinColo) \| Universidad de Antioquia , Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2019 | Machine Learning in Astronomy and Gravitational Lens (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.
+{{< fa angle-double-right >}} 2019 \| Machine Learning in Astronomy and Gravitational Lens (AstroTwinColo) \| Universidad de Antioquia , Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2017 | Application of methodology tools in investigation: Process in Science, Technology and Investigation | SENA, Cundinamarca, Colombia | 40 hours.
+{{< fa angle-double-right >}} 2017 \| Application of methodology tools in investigation: Process in Science, Technology and Investigation \| SENA, Cundinamarca, Colombia \| 40 hours.
 
-{{< fa angle-double-right >}} 2016 | Radioastronomy with ALMA e Introduction to astrochemistry (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2016 \| Radioastronomy with ALMA e Introduction to astrochemistry (AstroTwinColo) \| Universidad de Antioquia, Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2013 | Seedbed of INGENIO UAM | Autonomous Universidad de Manizales, Manizales, Colombia | 40 hours.
+{{< fa angle-double-right >}} 2013 \| Seedbed of INGENIO UAM \| Autonomous Universidad de Manizales, Manizales, Colombia \| 40 hours.
 
-{{< fa angle-double-right >}} 2012 | Comprehensive action Leadership program | IPlay, Manizales, Colombia | 120 hours.
+{{< fa angle-double-right >}} 2012 \| Comprehensive action Leadership program \| IPlay, Manizales, Colombia \| 120 hours.
 
-{{< fa angle-double-right >}} 2010 | Aptitude in the English language, Centro de Idiomas Americanos (CIA) | Manizales, Colombia | 120 hours.
+{{< fa angle-double-right >}} 2010 \| Aptitude in the English language, Centro de Idiomas Americanos (CIA) \| Manizales, Colombia \| 120 hours.
 
 ## <i class="fa-solid fa-award"></i> **Academic Recognition & Awards**
 
-{{< fa angle-double-right >}} 2020/02 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2020/02 \| Academic Honor. Best student of physics institute \| Universidad de Antioquia, Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2015/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2015/01 \| Academic Honor. Best student of physics institute \| Universidad de Antioquia, Medellín, Colombia.
 
-{{< fa angle-double-right >}} 2014/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.
+{{< fa angle-double-right >}} 2014/01 \| Academic Honor. Best student of physics institute \| Universidad de Antioquia, Medellín, Colombia.
 
 <small><em>Updated on: `r Sys.Date()`</em></small>

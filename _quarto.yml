@@ -22,16 +22,16 @@ website:
     #background: dark
     right:
       - text: Blog
-        href: /pages/blog.qmd
+        href: pages/blog.qmd
       - text: Vitae
-        href: /pages/vitae.qmd
+        href: pages/vitae.qmd
       - text: My Journal
-        href: /pages/journal.qmd
+        href: pages/journal.qmd
 format:
   html:
     link-external-newwindow: true
-    theme: /styles/theme.scss
-    css: /styles/styles.css
+    theme: styles/theme_dark.scss
+    css: styles/styles.css
 
 editor: visual
 

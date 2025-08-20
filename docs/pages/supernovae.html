@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2023-01-07">
 
-<title>Welcome To My Blog – Jurados</title>
+<title>Supernova – Jurados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b9fda6eb964abb8ad427ae1eda48c2b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b9fda6eb964abb8ad427ae1eda48c2b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,18 +67,48 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles/styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="assets/css/astro_notes.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jurados</span>
     </a>
   </div>
@@ -91,15 +119,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/blog.html"> 
+    <a class="nav-link" href="../pages/blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/vitae.html"> 
+    <a class="nav-link" href="../pages/vitae.html"> 
 <span class="menu-text">Vitae</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/journal.html"> 
+    <a class="nav-link" href="../pages/journal.html"> 
 <span class="menu-text">My Journal</span></a>
   </li>  
 </ul>
@@ -110,55 +138,93 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">January 7, 2023</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Supernova</h2>
+   
+  <ul>
+  <li><a href="#constants" id="toc-constants" class="nav-link active" data-scroll-target="#constants"><strong>Constants</strong></a></li>
+  <li><a href="#abrevations" id="toc-abrevations" class="nav-link" data-scroll-target="#abrevations"><strong>Abrevations</strong></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>Introduction</strong></a>
+  <ul class="collapse">
+  <li><a href="#a-little-bit-of-history" id="toc-a-little-bit-of-history" class="nav-link" data-scroll-target="#a-little-bit-of-history">A little bit of history</a></li>
+  <li><a href="#first-approach" id="toc-first-approach" class="nav-link" data-scroll-target="#first-approach">First Approach</a></li>
+  <li><a href="#bases-fisica-de-las-clasificacion" id="toc-bases-fisica-de-las-clasificacion" class="nav-link" data-scroll-target="#bases-fisica-de-las-clasificacion">Bases Fisica de las clasificacion</a></li>
+  </ul></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados">Resultados</a>
+  <ul class="collapse">
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Supernova</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+</header>
 
 
+<section id="constants" class="level2">
+<h2 class="anchored" data-anchor-id="constants"><strong>Constants</strong></h2>
+<p>sasas</p>
+</section>
+<section id="abrevations" class="level2">
+<h2 class="anchored" data-anchor-id="abrevations"><strong>Abrevations</strong></h2>
+<p>sasa</p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
+<section id="a-little-bit-of-history" class="level3">
+<h3 class="anchored" data-anchor-id="a-little-bit-of-history">A little bit of history</h3>
+<p>According to the Sung Dynasty Annals (China), it was possible to observer one “<em>guest star</em>” so brilliant for 23 days, and just two days after this ceased to be visible. This event could occur at July 4 of 1514 b.c.e [2], to northeast of Aldebaran constellation, the <em>Taurus’ eye</em>, currently, it is known as <strong>Crab Nebula</strong>. In addition to the previous guest star, in our <strong>Milky Way</strong> at least has been observed others two supernovae. The first one was in 1572 b.c.e in Cassiopeia constellation observed by Tycho Brahe and the second one was in 1604 b.c.e in Ophiuchus constellation studied by Johannes Kepler. This does not mean that outside our galaxy no more “guest stars” have been seen, the closest ones were observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda. was observed in 1885 c.e. in the center of the galaxy M31, in the constellation Andromeda whose peak intensity was between 6 - 7 in magnitude [2]. peak intensity was between 6 - 7 in magnitude [2]. The fact that the “guest stars” are almost as bright as the host galaxy means that they are too energetic physical phenomenon. The fact that the guest stars are almost as bright as the host galaxy means that they are overly energetic physical phenomena. For this reason, the astronomer Frist Zwicky named them Supernovae (Supernovae), SNe [2].</p>
+</section>
+<section id="first-approach" class="level3">
+<h3 class="anchored" data-anchor-id="first-approach">First Approach</h3>
+<p>Massive stars, larger than 10 times the solar mass (&amp; 10M ) have a catastrophic end through an explosion that sends their outer layers outwards at a certain an explosion that sends their outer layers outward at a certain percentage of the speed of light. light. For a star with a mass similar to the Sun, there is an equilibrium between the gravity due to the mass that tries to compress the star and the gravity that tries to compress the star. that tries to compress the star and the pressure caused by the heat that tries to expand it [2]. The stars during their life cycle generate a physical process called nuclear fusion, which is based on the creation of new elements from other elements through collisions between nuclear collisions, In this way, hydrogen is transformed into helium, helium into carbon, carbon into neon, neon into oxygen, oxygen into oxygen, and carbon into neon. Oxygen, Oxygen into Silicon and Silicon into Iron. A star can fuse Hydrogen to Helium for millions or billions of years millions or billions of years, but the time it takes to fuse Silicon into Iron can take as little as a few days, since even a few days may days, since up to Iron all fusion reactions produce energy in the form of heat, but the energy to fuse Silicon into Iron can take only a few days. However, the energy to fuse Iron into heavier elements takes its energy from the star itself [2]. from the star itself [2]. The Iron core collapses in a few thousandths of a second, due to the immense gravity, from a few thousands of kilometers to a compressed mass sphere of only a few kilometers, so that the outer so that the star’s outer capabilities are precipitated downward. This generates two things: first, a first, a rebound that sends the outer layers of the star out, and second, a large amount of neutrinos are released [2]. secondly a large amount of neutrinos is released [2]. As the star explodes, the expanding gas is so hot that it can even generate fusion processes, thus creating elements as heavy as fusion processes, thus creating elements as heavy as uranium, so that more radiative elements are created in the explosion. are created in the explosion. The expanding gas is what is known as the SN remnant, which will expand for hundreds of thousands of years. will expand for hundreds of thousands of years and eventually cool down to become so thin that it will fuse with the tenuous gas between the tenuous gas between the stars; sometimes the remnant gas mixes with the gas that is forming new stars [2]. forming new stars [2].</p>
+<p>When the material ejected by the SN meets the gas that already existed around the star, shock waves are created. shock waves are created. Within these shock waves the ejected gas slows down, compresses and heats up to millions of degrees. millions of degrees. The high temperatures of the gas mean that the atoms are moving very fast, leading to collisions. which leads to very energetic collisions between them. The collisions are so energetic that they knock the electrons electrons completely out of the atoms, i.e., the atoms become ionized. When the gas is so hot, the atoms bounce off each other generating X-rays [2]. As the remnant emits X-rays it loses energy, the loss of energy causing it to cool after tens of thousands of years to a few thousand years. tens of thousands of years to a few thousand degrees [2]. In places with low densities but hot gas, such as the remnant of an SN such as the remnant of an old SN, the emission lines typically seen are excited and ionized forms of Hydrogen, Oxygen, Nitrogen, Nitrogen, Nitrous of Hydrogen, Oxygen, Nitrogen, Sulfur and other types of atoms. This can make the characteristic colors to our eyes the characteristic colors of SNs can be red or green. the star’s core collapses. The heat and pressure are so high from this explosion that fusion can take place. can take place. The expanding gas normally cools, but these decaying radiative elements produce gamma rays. produce gamma rays. The gas absorbs this radiation, heating it. After one or two weeks much of the light of the light emitted by the SN remnant is due to heating from radioactive decay [2]. As time progresses, the remnant continues to expand. During the first stage of its During the first stage of its lifetime, the gas in the remnant is dense and therefore sufficiently opaque to reveal only the outer part of the expanding cloud. outer part of the expanding cloud. But as it expands, its volume increases causing its average density to decrease. decreases and eventually the gas becomes transparent to visible light. It can then be can be seen inside the remnant, and after a few years the spinning pulsar becomes invisible. The gas is diffuse to our eyes with a bluish hue. However, the gas in the outer parts of the remnant has been compressed into thin filaments and ribbons. compressed into thin filaments and ribbons by the shock wave, and is dominated by linear emission. This gas glows partially red and green[2]. Over thousands of years, the pulsar-driven gas from the inner part of the nebula has mixed with the gas between the stars. mixed with the gas between the stars in the Galaxy. The remnant is no longer a discrete entity, but has merged with the interstellar medium. has merged with the interstellar medium. The stars that form from these regions of gas and dust are enriched by the SN explosion. enriched by the explosion of SN: heavy elements such as Calcium, Silicon, Uranium Iron and many other seeds of nascent stars [2].</p>
+</section>
+<section id="bases-fisica-de-las-clasificacion" class="level3">
+<h3 class="anchored" data-anchor-id="bases-fisica-de-las-clasificacion">Bases Fisica de las clasificacion</h3>
+<p>En general las explosiones de SNe son teroicamente el resultado de alguno de los dos siguientes modelos: la explosión termonuclear de una enana blanca ó un fenomeno explosivo siguiente al colapso terminal del núcleo de una estrella masiva [1]. Sin embargo existen ambiguedades para algunas subclases de las SNe Ia, Ib y Ic para las cuales solo hay evidencia circunstancial localizada y lo mismo ocurre para las SNe de tipo IIn (resultado de la explosión de una enana blanca que interactua con material circumstancial). Los principales tipos de SNe se puede ver en 1.</p>
+<p>The main classes of SNe can be defined based on the spectral properties of the peak</p>
+</section>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<p>La forma como se puede transformar las magnitudes (brillo) en flujo esta dado por la expresion</p>
+<p><span class="math display">\[
+m - m_{z} = -2.5\log{\frac{F}{F_{z}}}
+\]</span></p>
+<p>donde m es la magnitud que de la SN en un filtro especifico, mz es la magnitud cero para el filtro especifico, F es el flujo que tendría la SN para la magnitud en un filtro especifico y Fz es el flujo a magnitud cero para la SN en un filtro especifico. Utilizando los datos de 2se puede hallar el flujo a partir de las magnitudes para cada unos de los filtron de la fotometría de Jhonson tomando como referencia los datos del flujo a magnitud cero</p>
+<section id="referencias" class="level3">
+<h3 class="anchored" data-anchor-id="referencias">Referencias</h3>
+<p>[1] Avishay Gal-Yam. Observational and Physical Classification of Supernovae, pages 195–237. Springer International Publishing, Cham, 2017. [2] Sonoma State University. Introduction to supernovae. Technical report, NASA Education, 2017.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

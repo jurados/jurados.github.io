@@ -32,7 +32,7 @@ About this blog
 ::: {.g-col-12 .g-col-md-6 style="item-align:center;"}
 <center>
 
-![](profile.png){width="400px" height="400px" fig-align="center"}
+![](assets/images/profile.png){width="400px" height="400px" fig-align="center"}
 
 <a href='https://www.facebook.com/steve.juradopinilla' target='_blank'><img src="https://img.shields.io/badge/-facebook-blue?style=for-the-badge&amp;logo=Facebook&amp;logoColor=white&amp;color=black"/> </a> <a href='https://twitter.com/SteveJurado' target='_blank'> <img src="https://img.shields.io/badge/-x-blue?style=for-the-badge&amp;logo=x&amp;logoColor=white&amp;color=black"/> </a> <a href='https://www.linkedin.com/in/astrojurados/' target='_blank'> <img src="https://img.shields.io/badge/-linkedin-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;color=black"/> </a> <a href='https://github.com/jurados' target='_blank'> <img src="https://img.shields.io/badge/-github-blue?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;color=black"/> </a>
 
