@@ -52,8 +52,8 @@ Steve Jurado
 
 -   Python
 -   R
--   C
 -   SQL
+-   C
 :::
 
 ::: {.column width="5%"}
@@ -140,6 +140,8 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 <center>**Thesis:** *"*Combining Theory and Multimodal Observations to Classify and Characterize Supernovae*."* Under the supervision of <a href='https://scholar.google.com/citations?user=ptRI8_sAAAAJ&hl=en'>Dr. Francisco Förster Buron</a> .</center>
 
+</br>
+
 {{< fa angle-double-right >}} Universidad de Antioquia, Medellín, Colombia \| Bachelor of Science in Astronomy \| May 2014 - June 2022
 
 <center>**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'>Dr. Lauren Flor-Torres</a> & <a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'> Dr. Camilo Delgado-Correal</a>.</center>
@@ -206,7 +208,7 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 ## <i class='fa-solid fa-earth-americas'></i> **Summer Schools, Conferences & Workshops**
 
-{{< fa angle-double-right >}} 2025 \| IV Chilean Astrochemistry \| Presentation: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope \|Santiago, Chile.
+{{< fa angle-double-right >}} 2025 \| IV Chilean Astrochemistry \| Presentation: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope \| Santiago, Chile.
 
 {{< fa angle-double-right >}} 2024 \| Curso del National Laboratory for High Performance Computing (NLHPC) de Introduccion y Avanzado en el uso del Clúster Leftraru EPU \| Santiago, Chile.
 
@@ -236,6 +238,12 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 ## <i class='fas fa-book-open'></i> **Complementary Education**
 
+{{< fa angle-double-right >}} 2025 \| Introduction to Weight & Biases \| Weight & Biases.
+
+{{< fa angle-double-right >}} 2025 \| Fundamentals of Accelerated Computing with CUDA C/C++ \| NVIDIA.
+
+{{< fa angle-double-right >}} 2025 \| Fundamentals of Deep Learning \| NVIDIA.
+
 {{< fa angle-double-right >}} 2022 \| Data Science for All (DS4A) \| MinTic and Correlation One, Colombia \| 375 hours.
 
 {{< fa angle-double-right >}} 2020 \| High dispersion spectroscopy for Astronomy and The large-scale structure of the Universe (AstroTwinColo) \| Universidad de Antioquia , Medellín, Colombia.
@@ -253,6 +261,8 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 {{< fa angle-double-right >}} 2010 \| Aptitude in the English language, Centro de Idiomas Americanos (CIA) \| Manizales, Colombia \| 120 hours.
 
 ## <i class="fa-solid fa-award"></i> **Academic Recognition & Awards**
+
+{{< fa angle-double-right >}} 2023/01 \| National Agency for Research and Development (ANID) Scholarship \| Santiago, Chile.
 
 {{< fa angle-double-right >}} 2020/02 \| Academic Honor. Best student of physics institute \| Universidad de Antioquia, Medellín, Colombia.
 
