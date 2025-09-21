@@ -138,6 +138,8 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 {{< fa angle-double-right >}} Universidad de Chile \| Ph.D student in Astronomy \| March 2023 - Present
 
+<center>**Thesis:** *"*Combining Theory and Multimodal Observations to Classify and Characterize Supernovae*."* Under the supervision of <a href='https://scholar.google.com/citations?user=ptRI8_sAAAAJ&hl=en'>Dr. Francisco Förster Buron</a> .</center>
+
 {{< fa angle-double-right >}} Universidad de Antioquia, Medellín, Colombia \| Bachelor of Science in Astronomy \| May 2014 - June 2022
 
 <center>**Thesis:** *"Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope."* Under the supervision of <a href='https://scholar.google.com/citations?user=tOYfRkkAAAAJ&hl=es'>Dr. Lauren Flor-Torres</a> & <a href='https://scholar.google.com/citations?user=HXHGks0AAAAJ&hl=en'> Dr. Camilo Delgado-Correal</a>.</center>
@@ -150,7 +152,7 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 {{< fa angle-double-right >}} Astrochemistry
 
-{{< fa angle-double-right >}} Stellar Spectroscopy
+{{< fa angle-double-right >}} Astroinformatic
 :::
 
 ::: g-col-6
@@ -192,6 +194,8 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 
 ### Academic
 
+{{< fa angle-double-right >}} 2025 \| Teacher assistant \| Responsible for 4 hour/week how teacher assistant in the course of General Astronomy \| Universidad de Chile, Santiago, Chile.
+
 {{< fa angle-double-right >}} 2016 – 2022 \| Teacher assistant II \| Responsible for 4 hour/week how advisor for high school and basic math for graduateds of high school at Mathematics Seminar \| Universidad de Antioquia, Medellín, Colombia.
 
 {{< fa angle-double-right >}} 2016 – 2022 \| Teacher assistant I \| Responsible for 4 hour/week for 8 grade and 10 of high school, and basic math for 11 grade and graduateds of high school) at Mathematics Seminar \| Universidad de Antioquia, Medellín, Colombia.
@@ -201,6 +205,18 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 {{< fa angle-double-right >}} 2018 – 2020 \| Science Communicator and logistic assistant \| We count with a mobile dome as a Planetarium where we projected differents scientific shows, specially in astronomy. Also we realized some workshops in astronomy for persons with a large variability of ages \| Inmerdome, Medellín, Colombia.
 
 ## <i class='fa-solid fa-earth-americas'></i> **Summer Schools, Conferences & Workshops**
+
+{{< fa angle-double-right >}} 2025 \| IV Chilean Astrochemistry \| Presentation: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope \|Santiago, Chile.
+
+{{< fa angle-double-right >}} 2024 \| Curso del National Laboratory for High Performance Computing (NLHPC) de Introduccion y Avanzado en el uso del Clúster Leftraru EPU \| Santiago, Chile.
+
+{{< fa angle-double-right >}} 2024 \| 1st UNAB Astrochemistry Workshop \| Santiago, Chile.
+
+{{< fa angle-double-right >}} 2024 \| First LSST LatinAmerica Meeting \| Poster: Combining Theory and Multi- modal Observations to Classify and Characterize Transient Events \| La Serena, Chile.
+
+{{< fa angle-double-right >}} 2024 \| Summer School in Statistics for Astronomers \| Center for Astrostatistics, Pennsylvania State University, US.
+
+{{< fa angle-double-right >}} 2023 \| Workshop in Computational Chemistry and Molecular Spectroscopy \| Poster: Computational and Observational search for HCSCN, HCSCCH and c-C2H2S sulfur molecules around the carbon star IRC+10216 \| Cocón, Chile.
 
 {{< fa angle-double-right >}} 2022 \| Colombian Meeting of Astronomy & Astrophysics (COCOA) \| Speaker, Tunja, Colombia.
 
