@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Jurados</title>
+<link>https://www.jurados.github.io/pages/blog.html</link>
+<atom:link href="https://www.jurados.github.io/pages/blog.xml" rel="self" type="application/rss+xml"/>
+<description>This is Steve Jurado&#39;s personal blog</description>
+<generator>quarto-1.7.33</generator>
+<lastBuildDate>Wed, 09 Sep 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Carta para un fin …</title>
+  <link>https://www.jurados.github.io/pages/blog_posts/descpaz.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>sasdasd zxc zxc asd zxc zxc asd qwe zaxc zxc asd zxc zxc asd zcx asd zxc</p>
+
+
+
+ ]]></description>
+  <category>Personal</category>
+  <guid>https://www.jurados.github.io/pages/blog_posts/descpaz.html</guid>
+  <pubDate>Wed, 09 Sep 2026 03:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

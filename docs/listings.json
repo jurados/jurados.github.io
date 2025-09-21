@@ -5,6 +5,8 @@
   },
   {
     "listing": "/pages/blog.html",
-    "items": []
+    "items": [
+      "/pages/blog_posts/descpaz.html"
+    ]
   }
 ]
