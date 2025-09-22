@@ -1,12 +1,21 @@
 [
   {
     "listing": "/pages/journal.html",
-    "items": []
+    "items": [
+      "/pages/journal_posts/first_year.html"
+    ]
   },
   {
     "listing": "/pages/blog.html",
     "items": [
+      "/pages/blog_posts/historia1.html",
       "/pages/blog_posts/descpaz.html"
+    ]
+  },
+  {
+    "listing": "/pages/academic.html",
+    "items": [
+      "/pages/academic_posts/supernovae.html"
     ]
   }
 ]

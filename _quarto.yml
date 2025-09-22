@@ -27,6 +27,8 @@ website:
         href: pages/vitae.qmd
       - text: My Journal
         href: pages/journal.qmd
+      - text: Academic Notes
+        href: pages/academic.qmd
 format:
   html:
     link-external-newwindow: true

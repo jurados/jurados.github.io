@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.jurados.github.io/index.html</loc>
-    <lastmod>2025-09-08T16:03:00.895Z</lastmod>
+    <lastmod>2025-09-22T17:03:51.165Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/pages/vitae.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.jurados.github.io/pages/journal.html</loc>
-    <lastmod>2025-08-20T00:00:33.534Z</lastmod>
+    <lastmod>2025-09-21T21:05:08.610Z</lastmod>
   </url>
   <url>
     <loc>https://www.jurados.github.io/posts/new_blog_post/post.html</loc>
@@ -38,6 +38,22 @@
   </url>
   <url>
     <loc>https://www.jurados.github.io/pages/blog_posts/descpaz.html</loc>
-    <lastmod>2025-09-21T20:39:28.002Z</lastmod>
+    <lastmod>2025-09-21T21:37:09.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jurados.github.io/pages/journal_posts/first_year.html</loc>
+    <lastmod>2025-09-21T21:05:07.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jurados.github.io/pages/blog_posts/historia1.html</loc>
+    <lastmod>2025-09-21T20:55:25.226Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jurados.github.io/pages/academic_posts/supernovae.html</loc>
+    <lastmod>2025-08-20T02:43:49.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jurados.github.io/pages/academic.html</loc>
+    <lastmod>2025-09-22T17:00:17.235Z</lastmod>
   </url>
 </urlset>
