@@ -1,0 +1,18 @@
+---
+title: 'Astrostatistic'
+toc: true
+toc-title: 'Astrostatistic'
+toc-location: left
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format: 
+  html: 
+    css: assets/css/astro_notes.css
+---
+
+# Probability
+
+An experiment
