@@ -15,6 +15,7 @@
   {
     "listing": "/pages/academic.html",
     "items": [
+      "/pages/academic_posts/astrostatistic.html",
       "/pages/academic_posts/supernovae.html"
     ]
   }
