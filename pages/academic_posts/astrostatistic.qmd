@@ -3,16 +3,24 @@ title: 'Astrostatistic'
 toc: true
 toc-title: 'Astrostatistic'
 toc-location: left
-execute: 
-  message: false
-  warning: false
-editor_options: 
-  chunk_output_type: console
-format: 
-  html: 
-    css: assets/css/astro_notes.css
+execute:
+message: false
+warning: false
+editor_options:
+chunk_output_type: console
+format:
+html:
+css: assets/css/astro_notes.css
 ---
 
 # Probability
 
 An experiment
+
+```{python}
+#| echo: true
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
+plt.show()
+```

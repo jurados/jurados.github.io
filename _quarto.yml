@@ -3,9 +3,11 @@ project:
   resources:
     - "assets/"
   output-dir: docs
+  render:
+    - "!jurados/"
 website:
   title: "Jurados"
-  site-url: https://www.jurados.github.io
+  site-url: https://jurados.github.io
   description: "This is Steve Jurado's personal blog"
   page-footer: 
     center:
