@@ -4,6 +4,7 @@ project:
     - "assets/"
   output-dir: docs
   render:
+    - "*.qmd"
     - "!jurados/"
 website:
   title: "Jurados"

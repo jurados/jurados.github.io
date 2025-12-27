@@ -1,0 +1,19 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&display=swap');
+*/
+h1, h2, h3 {
+  /*font-family: "Montserrat";*/
+  color:  black;
+  margin-top: 0rem;
+  
+}
+
+h2{
+    font-size: 1.3rem;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 0rem;
+}
+h2{
+    font-size: 1.0rem;
+    padding-bottom: 0rem;
+}

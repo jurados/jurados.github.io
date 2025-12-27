@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/pages/academic.html",
+    "items": [
+      "/pages/academic_posts/astrostatistic.html",
+      "/pages/academic_posts/supernovae.html"
+    ]
+  },
+  {
+    "listing": "/pages/blog.html",
+    "items": [
+      "/pages/blog_posts/descpaz.html",
+      "/pages/blog_posts/historia1.html"
+    ]
+  },
+  {
+    "listing": "/pages/journal.html",
+    "items": [
+      "/pages/journal_posts/first_year.html"
+    ]
+  }
+]
