@@ -92,6 +92,14 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../pages/research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../pages/blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
@@ -143,30 +151,66 @@ ul.task-list li input[type="checkbox"] {
 <section id="download" class="level3">
 <h3 class="anchored" data-anchor-id="download">Download</h3>
 <center>
-<a href="assets/docs/cv_español.pdf" target="_blank"><img src="https://img.shields.io/badge/-Espa%C3%B1ol-blue?style=for-the-badge&amp;color=black"></a> <a href="assets/docs/cv_english.pdf" target="_blank"><img src="https://img.shields.io/badge/-English-blue?style=for-the-badge&amp;color=black"></a>
+<a href="../assets/pdfs/CV_SteveJurado.pdf" target="_blank"><img src="https://img.shields.io/badge/-Download%20CV%20(PDF)-blue?style=for-the-badge&amp;color=black"></a>
 </center>
+</section>
+<section id="contact" class="level3">
+<h3 class="anchored" data-anchor-id="contact">Contact</h3>
+<p><i class="fa-solid fa-envelope"></i> sjurado@das.uchile.cl <br> <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/astrojurados/" target="_blank">astrojurados</a> <br> <i class="fa-brands fa-github"></i> <a href="https://github.com/jurados" target="_blank">jurados</a></p>
 </section>
 <section id="languages" class="level3">
 <h3 class="anchored" data-anchor-id="languages">Languages</h3>
-<p><strong>Spanish:</strong> Native <br> <strong>English:</strong> Intermediate</p>
-</section>
-<section id="software" class="level3">
-<h3 class="anchored" data-anchor-id="software">Software</h3>
-<ul>
-<li>iSpec</li>
-<li>IRAF</li>
-<li>Gaussian</li>
-</ul>
+<p><strong>Spanish:</strong> Native <br> <strong>English:</strong> B2</p>
 </section>
 <section id="skills" class="level3">
 <h3 class="anchored" data-anchor-id="skills">Skills</h3>
 <section id="coding" class="level4">
 <h4 class="anchored" data-anchor-id="coding">Coding</h4>
 <ul>
-<li>Python</li>
-<li>R</li>
+<li>Python (advanced)</li>
 <li>SQL</li>
 <li>C</li>
+<li>Bash</li>
+</ul>
+</section>
+<section id="ml-dl" class="level4">
+<h4 class="anchored" data-anchor-id="ml-dl">ML / DL</h4>
+<ul>
+<li>PyTorch</li>
+<li>scikit-learn</li>
+<li>TensorFlow</li>
+<li>Weights &amp; Biases</li>
+</ul>
+</section>
+<section id="statistics" class="level4">
+<h4 class="anchored" data-anchor-id="statistics">Statistics</h4>
+<ul>
+<li>Bayesian inference</li>
+<li>MCMC (emcee)</li>
+<li>Density estimation</li>
+</ul>
+</section>
+<section id="llms-agents" class="level4">
+<h4 class="anchored" data-anchor-id="llms-agents">LLMs / Agents</h4>
+<ul>
+<li>LLM APIs</li>
+<li>Model Context Protocol (MCP)</li>
+</ul>
+</section>
+<section id="astronomy-software" class="level4">
+<h4 class="anchored" data-anchor-id="astronomy-software">Astronomy software</h4>
+<ul>
+<li>iSpec</li>
+<li>IRAF</li>
+<li>Gaussian</li>
+</ul>
+</section>
+<section id="infrastructure" class="level4">
+<h4 class="anchored" data-anchor-id="infrastructure">Infrastructure</h4>
+<ul>
+<li>Git/GitHub, Linux</li>
+<li>HPC (SLURM)</li>
+<li>pip packaging, LaTeX</li>
 </ul>
 </section>
 </section>
@@ -177,11 +221,52 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:70%;">
 <!-- Functions -->
 <!--
-
-::: {.cell}
-
-:::
-
+```zcr
+col_br <- function(col){
+    dplyr::if_else(
+      !is.na(col) & col != "N/A|NA", 
+      paste0(col, ""),
+      ""
+    )
+}
+col_br_loc <- function(col){
+    dplyr::if_else(
+      !is.na(col) & col != "N/A|NA", 
+      paste0('<i class="fa-solid fa-location-dot"></i> ', col),
+      ""
+    )
+}
+create_section <- function(cv_data, section_name){
+  cv_data |>
+    dplyr::mutate(in_resume = as.character(in_resume),
+                  end = tidyr::replace_na(end, 9999),
+                  loc = dplyr::if_else(loc == "Online", NA_character_, loc)) |>
+    dplyr::filter(in_resume %in% c("TRUE", "VERDADEIRO"), section == section_name) |>
+    dplyr::select(section:description_1) |>
+    dplyr::arrange(desc(end), desc(start)) |>
+    dplyr::mutate(
+      date =
+        dplyr::case_when(
+          end == 9999 ~ glue::glue("Current <br> | <br> {start}"),
+          end != start ~ glue::glue("{end} <br> | <br> {start}"),
+          end == start ~ glue::glue("{end}"),
+          TRUE ~ ""
+        ) ,
+      .before = everything()
+    ) |>
+    dplyr::mutate(
+      main_text =
+        glue::glue(
+          "**{title}** <br> {col_br(institution)} {col_br(description_1)} {col_br_loc(loc)}"),
+      .after = date
+    ) |>
+    dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
+    gt::gt() |>
+    gt::fmt_markdown(columns = c(date, main_text)) |> 
+    gt::tab_options(column_labels.hidden = TRUE, table.width = gt::pct(100)) |> 
+    gt::cols_align(align = "left", columns = main_text)
+}
+```
 -->
 <!-- Main content -->
 <section id="bryam-steve-pinilla-jurado" class="level1">
@@ -201,101 +286,127 @@ Professional astronomer with a seven-semester chemistry degree and interests in 
 -->
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> <strong>Education</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Universidad de Chile | Ph.D student in Astronomy | March 2023 - Present</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Universidad de Chile, Santiago, Chile | Ph.D.&nbsp;in Sciences, Astronomy | March 2023 - December 2026 (expected)</p>
 <center>
-<strong>Thesis:</strong> <em>“<em>Combining Theory and Multimodal Observations to Classify and Characterize Supernovae</em>.”</em> Under the supervision of <a href="https://scholar.google.com/citations?user=ptRI8_sAAAAJ&amp;hl=en">Dr.&nbsp;Francisco Förster Buron</a> .
+<strong>Thesis:</strong> <em>“Combining Theory and Multimodal Observations to Classify and Characterize Supernovae.”</em> Under the supervision of <a href="https://scholar.google.com/citations?user=ptRI8_sAAAAJ&amp;hl=en">Dr.&nbsp;Francisco Förster Burón</a>.
 </center>
-<p><br></p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Universidad de Antioquia, Medellín, Colombia | Bachelor of Science in Astronomy | May 2014 - June 2022</p>
+<p style="text-align:justify">
+</p><p><em>Qualifying examination passed in April 2024; thesis project approved in May 2024. All mandatory coursework completed (Radiative Processes, Observational Astronomy, Galactic Astronomy, Galaxies, Research Workshops I–IV), plus elective courses in Machine Learning and Astroinformatics.</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Universidad de Antioquia, Medellín, Colombia | B.Sc. in Astronomy, graduating rank 1/10 | March 2014 - July 2022</p>
 <center>
-<strong>Thesis:</strong> <em>“Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope.”</em> Under the supervision of <a href="https://scholar.google.com/citations?user=tOYfRkkAAAAJ&amp;hl=es">Dr.&nbsp;Lauren Flor-Torres</a> &amp; <a href="https://scholar.google.com/citations?user=HXHGks0AAAAJ&amp;hl=en"> Dr.&nbsp;Camilo Delgado-Correal</a>.
+<strong>Thesis:</strong> <em>“Spectral characterization of the exoplanet host stars HAT-P-11 and HD 179949 with the TIGRE telescope.”</em> Under the supervision of <a href="https://scholar.google.com/citations?user=tOYfRkkAAAAJ&amp;hl=es">Dr.&nbsp;Lauren Flor-Torres</a> &amp; <a href="https://scholar.google.com/citations?user=HXHGks0AAAAJ&amp;hl=en"> Dr.&nbsp;Camilo Delgado-Correal</a>.
 </center>
 </section>
-<section id="research-interest" class="level2">
-<h2 class="anchored" data-anchor-id="research-interest"><i class="fa-solid fa-meteor"></i> <strong>Research Interest</strong></h2>
-<div class="grid">
-<div class="g-col-6">
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Supernovae</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Astrochemistry</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Astroinformatic</p>
-</div>
-<div class="g-col-6">
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Scientific Computational Simulations</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Data Sciences</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Machine Learning</p>
-</div>
-</div>
+<section id="research-interests" class="level2">
+<h2 class="anchored" data-anchor-id="research-interests"><i class="fa-solid fa-meteor"></i> <strong>Research Interests</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Astroinformatics &amp; Astrostatistics.</strong> Machine learning and deep learning applied to astronomical data; multimodal generative models; classification and characterization of transient events; large-scale data analysis.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Stellar Astrophysics.</strong> Stellar evolution, stellar spectroscopy, supernovae and transient phenomena.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Astrochemistry.</strong> Computational and observational searches for molecular species in circumstellar environments.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Physics-Informed Neural Networks (PINNs).</strong></p>
 </section>
 <section id="research-experience" class="level2">
 <h2 class="anchored" data-anchor-id="research-experience"><i class="fa-solid fa-brain" aria-label="brain"></i> <strong>Research Experience</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> RECA Internship 2021 | Characterization of progenitors and explosions of hydrogen-Present rich supernovae | Dr.&nbsp;Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) | Virtual, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Junior Researcher 2022 | Fundación Universidad del Valle (Cali, Colombia | Grupo Present de Astronomía y Astrofísica Macondo (GAAM) | Dr.&nbsp;Lauren Flor-Torres and Dr.&nbsp;Camilo Delgado-Correal.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 – Present | Doctoral research — Multimodal classification of transients | Universidad de Chile, Santiago, Chile.</p>
 <p style="text-align:justify">
-</p><p><em>100 Hours 100 Schools Leader in the project of Las Cumbres Observatory by International Astronomical Search Collaboration (IASC) “100 Hours 100 Schools”. In this we counts with 90 minutes will allow our to take 7-9 images depending on the object we are imaging. This program is designed for examining and discussing images of deep sky objects, planets and minor planet bodies (asteroids and comets) with school students.</em></p>
+</p><p><em>Extension of a variational autoencoder architecture (ParSNIP, Boone 2021) to incorporate multimodality, a novel feature in this research area. Construction of the full data pipeline: ingestion of light curves from the ALeRCE broker and of spectra from the WISeREP database, with preprocessing, smoothing and filtering of irregular time series. Implemented in PyTorch on HPC infrastructure. Developed in consultation with Prof.&nbsp;Andrew Connolly (University of Washington; Director of the eScience Institute and of DiRAC).</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2023 – Present | Astrochemistry — Sulfur-bearing molecules in IRC+10216 | Universidad de Chile, Santiago, Chile.</p>
+<p style="text-align:justify">
+</p><p><em>Computational and observational search for sulfur-bearing molecules (HCSCN, HCSCCH, c-C<sub>2</sub>H<sub>2</sub>S) around the carbon star IRC+10216, using data from the APEX telescope.</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 – 2024 | Junior Researcher | Fundación Universidad del Valle — Macondo Astronomy &amp; Astrophysics Group (GAAM), Cali, Colombia | Collaboration with Dr.&nbsp;Lauren Flor-Torres and Dr.&nbsp;Camilo Delgado-Correal.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 – 2022 | RECA Research Internship | International collaboration, Remote.</p>
+<p style="text-align:justify">
+</p><p><em>Statistical characterization of the transition phase in the light curves of hydrogen-rich supernovae, to constrain their progenitors and explosion properties. Parameter estimation carried out within a Bayesian framework using Markov Chain Monte Carlo (MCMC) sampling, including posterior inference and uncertainty quantification. Supervised by Dr.&nbsp;Claudia P. Gutiérrez (Universitat de Barcelona) and Dr.&nbsp;Santiago González-Gaitán (CENTRA, Universidade de Lisboa).</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Project Leader — 100 Hours 100 Schools | IASC / Las Cumbres Observatory, Remote.</p>
+<p style="text-align:justify">
+</p><p><em>Coordination of allocated observing time (90-minute blocks yielding 7–9 images per target) and delivery of analysis sessions on deep-sky objects, planets and minor bodies with school students.</em></p>
 <p></p>
 </section>
-<section id="technical-skills" class="level2">
-<h2 class="anchored" data-anchor-id="technical-skills"><i class="fa-solid fa-code" aria-label="code"></i> <strong>Technical Skills</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Operative systems: Linux basic-intermediate</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Programming language: Python intermediate, C basic, SQL basic, R studying</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Astronomy software: IRAF Basic, iSpec Intermediate</p>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications"><i class="fa-solid fa-file-lines"></i> <strong>Publications</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Jurado, S.</strong>, Gutiérrez, C. P. &amp; González-Gaitán, S., <em>“Characterization of the Transition Phase in the Light Curves of Hydrogen-Rich Supernovae”</em>, in preparation.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> <strong>Jurado, S.</strong> &amp; Förster, F., <em>“Multimodal Physical Variational Autoencoder for Supernova Light Curves and Spectra”</em>, in preparation.</p>
+</section>
+<section id="conference-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="conference-presentations"><i class="fa-solid fa-person-chalkboard"></i> <strong>Conference Presentations</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | IV Chilean Astrochemistry School | Talk: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope. Also served on the organizing (logistics) committee.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | First LSST Latin America Meeting, Universidad de La Serena, La Serena, Chile | Poster: Combining Theory and Multimodal Observations to Classify and Characterize Transient Events.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | 1st Colombian Symposium on Astrochemistry | Talk: Computational and Observational Search for Sulfur-Bearing Molecules in the carbon star IRC+10216 using the APEX telescope.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2023 | Workshop in Computational Chemistry and Molecular Spectroscopy, Concón, Chile | Poster: Computational and Observational Search for HCSCN, HCSCCH and c-C<sub>2</sub>H<sub>2</sub>S Sulfur Molecules around the carbon star IRC+10216.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA), Tunja, Colombia | Talk.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | <a href="https://sn-crisp.github.io/CRISP2021/" target="_blank">Correcting Reddening Intelligently for Supernova Probes (CRISP)</a>, virtual | Talk: Characterization of the Light-Curve Transition of Hydrogen-Rich Supernovae.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | <a href="https://sites.google.com/view/supervirtual2021" target="_blank">SuperVirtual: A Virtual Conference on Supernovae and Related Transients</a>, virtual | Poster: Characterization of the Light-Curve Transition of Hydrogen-Rich Supernovae.</p>
+</section>
+<section id="software-open-source-projects" class="level2">
+<h2 class="anchored" data-anchor-id="software-open-source-projects"><i class="fa-solid fa-code" aria-label="code"></i> <strong>Software &amp; Open-Source Projects</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | <a href="https://github.com/moira-andrews/SNFit" target="_blank">SNFit</a> — Python package for supernova light-curve fitting, CodeAstro | pip-installable package for polynomial fitting of supernova light curves and distance estimation from peak luminosity. Collaborative development with version control, testing and packaging.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | <a href="https://github.com/jurados/TrueStarVrotVelocity" target="_blank">TrueStarVrotVelocity</a> — Stellar rotation velocity estimation | Analysis of rotational velocities in stellar clusters using probability density estimation methods.</p>
+<center>
+See more on the <a href="../pages/projects.html">Projects</a> page.
+</center>
+</section>
+<section id="teaching-experience" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-experience"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> <strong>Teaching Experience</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2026 | Teaching Assistant — AI Agents | Chilean Financial Market Commission (CMF), Santiago, Chile.</p>
+<p style="text-align:justify">
+</p><p><em>Design and delivery of a training programme (4 h/week) for CMF teams on the development of LLM-based agents and subagents, including tool integration via the Model Context Protocol (MCP), applied to the automation of analysis, document extraction and evaluation tasks.</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 – 2026 | Teaching Assistant — Astroinformatics | Universidad de Chile, Santiago, Chile.</p>
+<p style="text-align:justify">
+</p><p><em>Weekly sessions (2 h/week) on machine learning and deep learning applied to real astronomical data, for undergraduate astronomy students and graduate students from several disciplines. Developed the complete practical material in Python (notebooks, exercises and assessments).</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Teaching Assistant — Diploma Programme in Astronomy | Department of Astronomy (DAS), Universidad de Chile, and National Astronomical Observatory (OAN), Santiago, Chile | Academic support to students in the first edition of the programme.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Research Mentor — Explora RM Sur Poniente | Colegio San Ignacio, Santiago, Chile.</p>
+<p style="text-align:justify">
+</p><p><em>Mentored two secondary-school student teams in their research projects: a study of Thorne–Żytkow objects, and the design of a Galileoscope built from recycled materials available in a public institution.</em></p>
+<p></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2016 – 2022 | Teaching Assistant I/II | Universidad de Antioquia, Medellín, Colombia | Basic Mathematics Seedbed programme: 4 h/week of mathematics teaching for 8th–11th grade students and secondary-school graduates.</p>
+</section>
+<section id="outreach-science-communication" class="level2">
+<h2 class="anchored" data-anchor-id="outreach-science-communication"><i class="fa-solid fa-satellite-dish"></i> <strong>Outreach &amp; Science Communication</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Science outreach | Center for Astrophysics and Associated Technologies (CATA), Santiago Centro, Chile | Public astronomy outreach activities in the Santiago Centro district.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2018 – 2020 | Science Communicator and Logistics Assistant | Inmerdome, Medellín, Colombia | Production and presentation of science shows in a portable astronomical dome (mobile planetarium), and delivery of astronomy workshops for audiences of all ages.</p>
+</section>
+<section id="summer-schools-conferences-workshops" class="level2">
+<h2 class="anchored" data-anchor-id="summer-schools-conferences-workshops"><i class="fa-solid fa-earth-americas"></i> <strong>Summer Schools, Conferences &amp; Workshops</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Machine Learning and Astrostatistics School: Applications to Massive Stars | Valparaíso, Chile.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | <a href="https://semaphorep.github.io/codeastro/" target="_blank">CodeAstro: A Software Engineering Workshop for Astronomy</a> | Version control, testing and packaging of scientific software | Evanston, Illinois, USA.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Latin American Conference on High Performance Computing (CARLA).</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Introductory and Advanced Courses on the Leftraru EPU Cluster | National Laboratory for High Performance Computing (NLHPC), Santiago, Chile.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Summer School in Statistics for Astronomers | Center for Astrostatistics, Pennsylvania State University, Pennsylvania, USA.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | 1st UNAB Astrochemistry Workshop | Universidad Andrés Bello, Santiago, Chile.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | International Virtual Courses (IVC): Introduction to Astrophysical Modeling and Computation | Institut Teknologi Bandung, Indonesia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Astronomy Python Bootcamp | Red de Estudiantes Colombianos de Astronomía.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | 1st Latin American Gaia School | Universidad de Antioquia, Medellín, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Summer School in Astrophysics (EVA 2021) | Institute of Radio Astronomy and Astrophysics (IRyA), UNAM, Virtual, Mexico.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2019 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA) | Medellín, Colombia, Attendee.</p>
+</section>
+<section id="complementary-education" class="level2">
+<h2 class="anchored" data-anchor-id="complementary-education"><i class="fas fa-book-open"></i> <strong>Complementary Education</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Leadership and Team Development | Universidad de Chile, Santiago, Chile.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Data Science for All (DS4A) | MinTIC and Correlation One, Colombia | 375 hours | Final project: predictive model of the efficiency of a coffee-drying boiler from physical process variables, for Café Buendía.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2020 | High-Dispersion Spectroscopy for Astronomy and the Large-Scale Structure of the Universe (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2019 | Machine Learning in Astronomy and Gravitational Lensing (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2017 | Methodological Tools in Research: Processes in Science, Technology and Research | SENA, Cundinamarca, Colombia | 40 hours.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2016 | Radio Astronomy with ALMA and Introduction to Astrochemistry (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2013 | INGENIO Research Incubator Programme | Universidad Autónoma de Manizales, Manizales, Colombia | 40 hours.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2012 | Comprehensive Leadership Programme | IPlay, Manizales, Colombia | 120 hours.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2010 | English Language Proficiency | Centro de Idiomas Americanos (CIA), Manizales, Colombia | 120 hours.</p>
+</section>
+<section id="awards-honours" class="level2">
+<h2 class="anchored" data-anchor-id="awards-honours"><i class="fa-solid fa-award"></i> <strong>Awards &amp; Honours</strong></h2>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2023 – 2026 | ANID National Doctoral Scholarship | Chile.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2014, 2015 &amp; 2020 | Academic Honour — Best student of the Physics Institute | Universidad de Antioquia, Medellín, Colombia.</p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Graduating rank 1/10, B.Sc. in Astronomy | Universidad de Antioquia, Medellín, Colombia.</p>
 </section>
 <section id="languages-1" class="level2">
 <h2 class="anchored" data-anchor-id="languages-1"><i class="fa fa-language"></i> <strong>Languages</strong></h2>
 <p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> Spanish: Native language.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> English: Level B2, certificated by Global World. Exam: In process.</p>
-</section>
-<section id="work-experience" class="level2">
-<h2 class="anchored" data-anchor-id="work-experience"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> <strong>Work Experience</strong></h2>
-<section id="academic" class="level3">
-<h3 class="anchored" data-anchor-id="academic">Academic</h3>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Teacher assistant | Responsible for 4 hour/week how teacher assistant in the course of General Astronomy | Universidad de Chile, Santiago, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2016 – 2022 | Teacher assistant II | Responsible for 4 hour/week how advisor for high school and basic math for graduateds of high school at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2016 – 2022 | Teacher assistant I | Responsible for 4 hour/week for 8 grade and 10 of high school, and basic math for 11 grade and graduateds of high school) at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.</p>
-</section>
-<section id="profesional" class="level3">
-<h3 class="anchored" data-anchor-id="profesional">Profesional</h3>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2018 – 2020 | Science Communicator and logistic assistant | We count with a mobile dome as a Planetarium where we projected differents scientific shows, specially in astronomy. Also we realized some workshops in astronomy for persons with a large variability of ages | Inmerdome, Medellín, Colombia.</p>
-</section>
-</section>
-<section id="summer-schools-conferences-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="summer-schools-conferences-workshops"><i class="fa-solid fa-earth-americas"></i> <strong>Summer Schools, Conferences &amp; Workshops</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | IV Chilean Astrochemistry | Presentation: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope | Santiago, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Curso del National Laboratory for High Performance Computing (NLHPC) de Introduccion y Avanzado en el uso del Clúster Leftraru EPU | Santiago, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | 1st UNAB Astrochemistry Workshop | Santiago, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | First LSST LatinAmerica Meeting | Poster: Combining Theory and Multi- modal Observations to Classify and Characterize Transient Events | La Serena, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2024 | Summer School in Statistics for Astronomers | Center for Astrostatistics, Pennsylvania State University, US.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2023 | Workshop in Computational Chemistry and Molecular Spectroscopy | Poster: Computational and Observational search for HCSCN, HCSCCH and c-C2H2S sulfur molecules around the carbon star IRC+10216 | Cocón, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA) | Speaker, Tunja, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | International Virtual Courses (IVC), Introduction to Astrophysical Modeling and Computational | Institute Teknologi Bandung, Indonesia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Astronomy Python Bootcamp, Red de Estudiantes Colombianos de Astronomía.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | 1st Latinoamerican School of Gaia | Universidad de Antioquia, Medellín,Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Correcting Reddening Intelligently for Supernova Probes (CRISP), Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) | Virtual .</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster) | Virtual.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2021 | Escuela de Verano en Astrofísica (EVA) 2021 | Institute of Radioastronomy and Astrophysics (IRyA), UNAM (México), Virtual, México.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2019 | Colombian Meeting of Astronomy &amp; Astrophysics (COCOA) | Attendant, Medellín, Colombia.</p>
-</section>
-<section id="complementary-education" class="level2">
-<h2 class="anchored" data-anchor-id="complementary-education"><i class="fas fa-book-open"></i> <strong>Complementary Education</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Introduction to Weight &amp; Biases | Weight &amp; Biases.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Fundamentals of Accelerated Computing with CUDA C/C++ | NVIDIA.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2025 | Fundamentals of Deep Learning | NVIDIA.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2022 | Data Science for All (DS4A) | MinTic and Correlation One, Colombia | 375 hours.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2020 | High dispersion spectroscopy for Astronomy and The large-scale structure of the Universe (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2019 | Machine Learning in Astronomy and Gravitational Lens (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2017 | Application of methodology tools in investigation: Process in Science, Technology and Investigation | SENA, Cundinamarca, Colombia | 40 hours.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2016 | Radioastronomy with ALMA e Introduction to astrochemistry (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2013 | Seedbed of INGENIO UAM | Autonomous Universidad de Manizales, Manizales, Colombia | 40 hours.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2012 | Comprehensive action Leadership program | IPlay, Manizales, Colombia | 120 hours.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2010 | Aptitude in the English language, Centro de Idiomas Americanos (CIA) | Manizales, Colombia | 120 hours.</p>
-</section>
-<section id="academic-recognition-awards" class="level2">
-<h2 class="anchored" data-anchor-id="academic-recognition-awards"><i class="fa-solid fa-award"></i> <strong>Academic Recognition &amp; Awards</strong></h2>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2023/01 | National Agency for Research and Development (ANID) Scholarship | Santiago, Chile.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2020/02 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2015/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> 2014/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.</p>
-<p><small><em>Updated on: 2025-12-27</em></small></p>
+<p><i class="fa-solid fa-angle-double-right" aria-label="angle-double-right"></i> English: B2, certified by Global World.</p>
+<p><small><em>Updated on: November 2026</em></small></p>
 
 
 </section>

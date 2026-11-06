@@ -24,6 +24,10 @@ website:
     pinned: true
     #background: dark
     right:
+      - text: Research
+        href: pages/research.qmd
+      - text: Projects
+        href: pages/projects.qmd
       - text: Blog
         href: pages/blog.qmd
       - text: Vitae

@@ -47,14 +47,14 @@ I am a Bachelor of Science in Astronomy from the <a href="https://www.udea.edu.c
 ***Thesis:*** *"Spectral Characterization of the Host Stars HAT-P-11 and HD 179949 with the TIGRE telescope."*
 
 ::: {style="text-align: center;"}
-<button class="my_button" onclick="location.href=&#39;assets/docs/thesis.pdf&#39;">
+<button class="my_button" onclick="location.href=&#39;assets/pdfs/thesis.pdf&#39;">
 
 DOWNLOAD THESIS
 
 </button>
 :::
 
-Currently, I am in my second year as a PhD student in Astronomy at the <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.\
+Currently, I am a PhD candidate in Astronomy at the <a href="https://das.uchile.cl/" style="color:#003087; text-decoration: none;" target="_blank">Departamento de Astronomía, Universidad de Chile</a>.\
 \
 ***Thesis:*** *"Combining Theory and Multimodal Observations to Classify and Characterize Supernovae"*
 

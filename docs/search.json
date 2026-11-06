@@ -35,6 +35,13 @@
     "text": "x &lt;- c(1,2,3)\nplot(x,sin(x))\n\n\n\n\nBla bla bla. This is a caption in the margin. Super cool isn’t it?"
   },
   {
+    "objectID": "pages/research.html",
+    "href": "pages/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research sits between stellar astrophysics and astroinformatics. I am interested in how massive stars live and die, and in building statistical and machine-learning tools for the large data sets that surveys such as ZTF and the Vera C. Rubin Observatory (LSST) are producing. Below are the three projects I am working on. All of them are still in progress and not yet published, so this page gives only a general picture. More details will come once the papers are out.\n\n  \n  \n    PhD thesis · in preparation\n    Multimodal deep learning for supernovae\n    Most methods that classify and characterize transients use only light curves. In my thesis, supervised by Dr. Francisco Förster, I am building a variational autoencoder that learns from light curves and spectra together. The model encodes each supernova in a latent space whose coordinates have a physical meaning, and decodes it into a spectral energy distribution that can be compared directly with the observations. It extends the ParSNIP model (Boone 2021) and uses ZTF photometry from the ALeRCE broker and spectra from WISeREP. It is written in PyTorch and trained on high-performance computing clusters.\n  \n\n\n\n  \n  \n    Paper in preparation\n    The transition phase of Type II supernovae\n    After the plateau, the light curves of hydrogen-rich (Type II) supernovae drop quickly before they settle onto the radioactive tail. This short transition phase has received much less attention than the plateau or the tail. With Dr. Claudia P. Gutiérrez, Dr. Santiago González-Gaitán and Dr. Laureano Martinez, I characterize this transition in a large sample of observed supernovae using an analytic model and Bayesian (MCMC) fitting. We then compare the observations with hydrodynamical explosion models to learn what the transition can tell us about the progenitor star and the explosion.\n  \n\n\n\n  \n  \n    Ongoing\n    Sulfur-bearing molecules in IRC+10216\n    IRC+10216 is the nearest carbon-rich AGB star and one of the richest chemical laboratories in the sky. I combine quantum-chemistry calculations (structures, energies and spectroscopic constants of isomers) with millimeter observations from the APEX telescope to search for new sulfur-bearing molecules in its circumstellar envelope, such as HCSCN, HCSCCH and c-C2H2S. I have presented this work at the Chilean Astrochemistry School and at the 1st Colombian Symposium on Astrochemistry.\n  \n\nIf you want to know more or would like to collaborate, write to me at sjurado@das.uchile.cl."
+  },
+  {
     "objectID": "pages/journal_posts/first_year.html",
     "href": "pages/journal_posts/first_year.html",
     "title": "Chile: First Year",
@@ -46,7 +53,7 @@
     "href": "pages/blog_posts/historia1.html",
     "title": "Ladron de Conocimiento",
     "section": "",
-    "text": "Despertando en otro día normal. Aún nada ha cambiado"
+    "text": "Para mi todo cambio después del dia New Gen. Siempre me dio envidia de los demás, o más que envidia, me sentía muy asombrado por las personas que sabian tantas cosas. Aquello que desconocía me causaba un gran asombro.\nNacido en América del sur. 27 años. 1.75m de altura. Mi lenguaje Español. Pelo negro, ojos color café. La verdad no destacaba mucho, puede decir un Sudamérica común.\nHabía estudiado historia, me gustaba mucho. El hecho de conocer la historia detras de cada edificacion, quienes habían vivido antes y como pequeñas acciones podrán generar enormes cambios. Trabajo de momento como guía turístico, no es muy bien pago, pero de verdad lo disfruto. Me ha permitido no solo conocer personas diferentes y sis historias propias, si no también, conocer rincones de la ciudad que tal vez no lo haría. Confienzo que en ocasiones, siento como"
   },
   {
     "objectID": "pages/academic_posts/supernovae.html",
@@ -95,7 +102,7 @@
     "href": "index.html",
     "title": "Hi, I’m Steve Jurado.",
     "section": "",
-    "text": "I am a Bachelor of Science in Astronomy from the Universidad de Antioquia.\nThesis: “Spectral Characterization of the Host Stars HAT-P-11 and HD 179949 with the TIGRE telescope.”\n\n\nDOWNLOAD THESIS\n\n\nCurrently, I am in my second year as a PhD student in Astronomy at the Departamento de Astronomía, Universidad de Chile.\n\nThesis: “Combining Theory and Multimodal Observations to Classify and Characterize Supernovae”\n\nThe life is this … I like this (Harvey Specter)"
+    "text": "I am a Bachelor of Science in Astronomy from the Universidad de Antioquia.\nThesis: “Spectral Characterization of the Host Stars HAT-P-11 and HD 179949 with the TIGRE telescope.”\n\n\nDOWNLOAD THESIS\n\n\nCurrently, I am a PhD candidate in Astronomy at the Departamento de Astronomía, Universidad de Chile.\n\nThesis: “Combining Theory and Multimodal Observations to Classify and Characterize Supernovae”\n\nThe life is this … I like this (Harvey Specter)"
   },
   {
     "objectID": "index.html#research-interests",
@@ -133,74 +140,102 @@
     "text": "Chile: First Year\n\n\n\n\n\n\n\n\nJul 12, 2025\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "ALeRCE · Hubble Constant from ZTF SNe Ia\n      CosmologyZTFRubin/LSST\n      Built at the ALeRCE Hackathon 2026: an estimate of H0 from 1,442 Type Ia supernovae seen by ZTF, plus early checks of supernova candidates from Rubin/LSST.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      KBMOD-StampNet\n      Deep LearningCNNSolar System\n      A CNN that separates real trans-Neptunian objects from false positives in KBMOD shift-and-stack searches. It compares a basic CNN, a ResNet-56 and a transfer-learned ResNet-50.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      SNFit\n      Python packageSupernovaeCodeAstro 2025\n      A pip-installable package for fitting supernova light curves and estimating distances from peak brightness, developed together with other participants at CodeAstro 2025.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      TrueStarVrotVelocity\n      Stellar AstrophysicsInverse problems\n      Recovers the true distribution of stellar rotational velocities from measured v sin i, using Tikhonov regularization and models in which stellar spin axes are not randomly oriented.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      specgrid\n      Python librarySpectroscopy\n      Places astronomical spectra on a fixed log-spaced wavelength grid with constant velocity resolution. It also handles continuum division and apodization.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      AS4501 · Astroinformatics\n      TeachingMachine Learning\n      Notebooks and exercises I wrote as teaching assistant for the Astroinformatics course at Universidad de Chile, applying machine learning and deep learning to real astronomical data.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      SNe Ia Cosmology · AS2001\n      TeachingALeRCECosmology\n      A hands-on activity for General Astronomy: students use ZTF light curves from ALeRCE to build a Hubble diagram of Type Ia supernovae and estimate H0.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      Galaxy Classifier\n      OutreachGalaxy Zoo\n      A simple galaxy classifier trained on Galaxy Zoo images, made for an IDIA + Junior Achievement Chile outreach activity with secondary-school students.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      arXiv + ADS Toolkit\n      AutomationLiterature\n      A daily arXiv monitor that sends alerts by WhatsApp, together with NASA ADS tools for building literature tables for a research topic.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      Generative & Multimodal AI\n      Generative modelsLabs\n      Hands-on labs on generative and multimodal artificial intelligence.\n      View on GitHub →\n    \n  \n\n  \n    \n    \n      Hertzsprung–Russell Diagram\n      Stellar AstrophysicsPython\n      A theoretical approximation of the Hertzsprung–Russell diagram from mass–luminosity and mass–radius relations, written for a stellar astrophysics course.\n      View on GitHub →\n    \n  \n\n\n\n\n  More on github.com/jurados →"
+  },
+  {
     "objectID": "pages/vitae.html",
     "href": "pages/vitae.html",
     "title": "Bryam Steve Pinilla Jurado",
     "section": "",
-    "text": "Steve Jurado\n\n\n\n    \n\n\n\n\n\n \n\n\n\n\nSpanish: Native  English: Intermediate\n\n\n\n\niSpec\nIRAF\nGaussian\n\n\n\n\n\n\n\nPython\nR\nSQL\nC"
+    "text": "Steve Jurado\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n sjurado@das.uchile.cl   astrojurados   jurados\n\n\n\nSpanish: Native  English: B2\n\n\n\n\n\n\nPython (advanced)\nSQL\nC\nBash\n\n\n\n\n\nPyTorch\nscikit-learn\nTensorFlow\nWeights & Biases\n\n\n\n\n\nBayesian inference\nMCMC (emcee)\nDensity estimation\n\n\n\n\n\nLLM APIs\nModel Context Protocol (MCP)\n\n\n\n\n\niSpec\nIRAF\nGaussian\n\n\n\n\n\nGit/GitHub, Linux\nHPC (SLURM)\npip packaging, LaTeX"
   },
   {
     "objectID": "pages/vitae.html#education",
     "href": "pages/vitae.html#education",
     "title": "Bryam Steve Pinilla Jurado",
     "section": " Education",
-    "text": "Education\n Universidad de Chile | Ph.D student in Astronomy | March 2023 - Present\n\nThesis: “Combining Theory and Multimodal Observations to Classify and Characterize Supernovae.” Under the supervision of Dr. Francisco Förster Buron .\n\n\n Universidad de Antioquia, Medellín, Colombia | Bachelor of Science in Astronomy | May 2014 - June 2022\n\nThesis: “Spectral characterization of host stars HAT-P-11 and HD179949 using iSpec obtained by the TIGRE telescope.” Under the supervision of Dr. Lauren Flor-Torres &  Dr. Camilo Delgado-Correal."
+    "text": "Education\n Universidad de Chile, Santiago, Chile | Ph.D. in Sciences, Astronomy | March 2023 - December 2026 (expected)\n\nThesis: “Combining Theory and Multimodal Observations to Classify and Characterize Supernovae.” Under the supervision of Dr. Francisco Förster Burón.\n\n\nQualifying examination passed in April 2024; thesis project approved in May 2024. All mandatory coursework completed (Radiative Processes, Observational Astronomy, Galactic Astronomy, Galaxies, Research Workshops I–IV), plus elective courses in Machine Learning and Astroinformatics.\n\n Universidad de Antioquia, Medellín, Colombia | B.Sc. in Astronomy, graduating rank 1/10 | March 2014 - July 2022\n\nThesis: “Spectral characterization of the exoplanet host stars HAT-P-11 and HD 179949 with the TIGRE telescope.” Under the supervision of Dr. Lauren Flor-Torres &  Dr. Camilo Delgado-Correal."
   },
   {
-    "objectID": "pages/vitae.html#research-interest",
-    "href": "pages/vitae.html#research-interest",
+    "objectID": "pages/vitae.html#research-interests",
+    "href": "pages/vitae.html#research-interests",
     "title": "Bryam Steve Pinilla Jurado",
-    "section": " Research Interest",
-    "text": "Research Interest\n\n\n Supernovae\n Astrochemistry\n Astroinformatic\n\n\n Scientific Computational Simulations\n Data Sciences\n Machine Learning"
+    "section": " Research Interests",
+    "text": "Research Interests\n Astroinformatics & Astrostatistics. Machine learning and deep learning applied to astronomical data; multimodal generative models; classification and characterization of transient events; large-scale data analysis.\n Stellar Astrophysics. Stellar evolution, stellar spectroscopy, supernovae and transient phenomena.\n Astrochemistry. Computational and observational searches for molecular species in circumstellar environments.\n Physics-Informed Neural Networks (PINNs)."
   },
   {
     "objectID": "pages/vitae.html#research-experience",
     "href": "pages/vitae.html#research-experience",
     "title": "Bryam Steve Pinilla Jurado",
     "section": " Research Experience",
-    "text": "Research Experience\n RECA Internship 2021 | Characterization of progenitors and explosions of hydrogen-Present rich supernovae | Dr. Claudia P. Gutiérrez (Universidad de Turku) and Dr.Santiago Gonzáles-Gaitán (CENTRA) | Virtual, Colombia.\n Junior Researcher 2022 | Fundación Universidad del Valle (Cali, Colombia | Grupo Present de Astronomía y Astrofísica Macondo (GAAM) | Dr. Lauren Flor-Torres and Dr. Camilo Delgado-Correal.\n\n100 Hours 100 Schools Leader in the project of Las Cumbres Observatory by International Astronomical Search Collaboration (IASC) “100 Hours 100 Schools”. In this we counts with 90 minutes will allow our to take 7-9 images depending on the object we are imaging. This program is designed for examining and discussing images of deep sky objects, planets and minor planet bodies (asteroids and comets) with school students."
+    "text": "Research Experience\n 2024 – Present | Doctoral research — Multimodal classification of transients | Universidad de Chile, Santiago, Chile.\n\nExtension of a variational autoencoder architecture (ParSNIP, Boone 2021) to incorporate multimodality, a novel feature in this research area. Construction of the full data pipeline: ingestion of light curves from the ALeRCE broker and of spectra from the WISeREP database, with preprocessing, smoothing and filtering of irregular time series. Implemented in PyTorch on HPC infrastructure. Developed in consultation with Prof. Andrew Connolly (University of Washington; Director of the eScience Institute and of DiRAC).\n\n 2023 – Present | Astrochemistry — Sulfur-bearing molecules in IRC+10216 | Universidad de Chile, Santiago, Chile.\n\nComputational and observational search for sulfur-bearing molecules (HCSCN, HCSCCH, c-C2H2S) around the carbon star IRC+10216, using data from the APEX telescope.\n\n 2022 – 2024 | Junior Researcher | Fundación Universidad del Valle — Macondo Astronomy & Astrophysics Group (GAAM), Cali, Colombia | Collaboration with Dr. Lauren Flor-Torres and Dr. Camilo Delgado-Correal.\n 2021 – 2022 | RECA Research Internship | International collaboration, Remote.\n\nStatistical characterization of the transition phase in the light curves of hydrogen-rich supernovae, to constrain their progenitors and explosion properties. Parameter estimation carried out within a Bayesian framework using Markov Chain Monte Carlo (MCMC) sampling, including posterior inference and uncertainty quantification. Supervised by Dr. Claudia P. Gutiérrez (Universitat de Barcelona) and Dr. Santiago González-Gaitán (CENTRA, Universidade de Lisboa).\n\n 2021 | Project Leader — 100 Hours 100 Schools | IASC / Las Cumbres Observatory, Remote.\n\nCoordination of allocated observing time (90-minute blocks yielding 7–9 images per target) and delivery of analysis sessions on deep-sky objects, planets and minor bodies with school students."
   },
   {
-    "objectID": "pages/vitae.html#technical-skills",
-    "href": "pages/vitae.html#technical-skills",
+    "objectID": "pages/vitae.html#publications",
+    "href": "pages/vitae.html#publications",
     "title": "Bryam Steve Pinilla Jurado",
-    "section": " Technical Skills",
-    "text": "Technical Skills\n Operative systems: Linux basic-intermediate\n Programming language: Python intermediate, C basic, SQL basic, R studying\n Astronomy software: IRAF Basic, iSpec Intermediate"
+    "section": " Publications",
+    "text": "Publications\n Jurado, S., Gutiérrez, C. P. & González-Gaitán, S., “Characterization of the Transition Phase in the Light Curves of Hydrogen-Rich Supernovae”, in preparation.\n Jurado, S. & Förster, F., “Multimodal Physical Variational Autoencoder for Supernova Light Curves and Spectra”, in preparation."
   },
   {
-    "objectID": "pages/vitae.html#languages-1",
-    "href": "pages/vitae.html#languages-1",
+    "objectID": "pages/vitae.html#conference-presentations",
+    "href": "pages/vitae.html#conference-presentations",
     "title": "Bryam Steve Pinilla Jurado",
-    "section": " Languages",
-    "text": "Languages\n Spanish: Native language.\n English: Level B2, certificated by Global World. Exam: In process."
+    "section": " Conference Presentations",
+    "text": "Conference Presentations\n 2025 | IV Chilean Astrochemistry School | Talk: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope. Also served on the organizing (logistics) committee.\n 2024 | First LSST Latin America Meeting, Universidad de La Serena, La Serena, Chile | Poster: Combining Theory and Multimodal Observations to Classify and Characterize Transient Events.\n 2024 | 1st Colombian Symposium on Astrochemistry | Talk: Computational and Observational Search for Sulfur-Bearing Molecules in the carbon star IRC+10216 using the APEX telescope.\n 2023 | Workshop in Computational Chemistry and Molecular Spectroscopy, Concón, Chile | Poster: Computational and Observational Search for HCSCN, HCSCCH and c-C2H2S Sulfur Molecules around the carbon star IRC+10216.\n 2022 | Colombian Meeting of Astronomy & Astrophysics (COCOA), Tunja, Colombia | Talk.\n 2021 | Correcting Reddening Intelligently for Supernova Probes (CRISP), virtual | Talk: Characterization of the Light-Curve Transition of Hydrogen-Rich Supernovae.\n 2021 | SuperVirtual: A Virtual Conference on Supernovae and Related Transients, virtual | Poster: Characterization of the Light-Curve Transition of Hydrogen-Rich Supernovae."
   },
   {
-    "objectID": "pages/vitae.html#work-experience",
-    "href": "pages/vitae.html#work-experience",
+    "objectID": "pages/vitae.html#software-open-source-projects",
+    "href": "pages/vitae.html#software-open-source-projects",
     "title": "Bryam Steve Pinilla Jurado",
-    "section": " Work Experience",
-    "text": "Work Experience\n\nAcademic\n 2025 | Teacher assistant | Responsible for 4 hour/week how teacher assistant in the course of General Astronomy | Universidad de Chile, Santiago, Chile.\n 2016 – 2022 | Teacher assistant II | Responsible for 4 hour/week how advisor for high school and basic math for graduateds of high school at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.\n 2016 – 2022 | Teacher assistant I | Responsible for 4 hour/week for 8 grade and 10 of high school, and basic math for 11 grade and graduateds of high school) at Mathematics Seminar | Universidad de Antioquia, Medellín, Colombia.\n\n\nProfesional\n 2018 – 2020 | Science Communicator and logistic assistant | We count with a mobile dome as a Planetarium where we projected differents scientific shows, specially in astronomy. Also we realized some workshops in astronomy for persons with a large variability of ages | Inmerdome, Medellín, Colombia."
+    "section": " Software & Open-Source Projects",
+    "text": "Software & Open-Source Projects\n 2025 | SNFit — Python package for supernova light-curve fitting, CodeAstro | pip-installable package for polynomial fitting of supernova light curves and distance estimation from peak luminosity. Collaborative development with version control, testing and packaging.\n 2025 | TrueStarVrotVelocity — Stellar rotation velocity estimation | Analysis of rotational velocities in stellar clusters using probability density estimation methods.\n\nSee more on the Projects page."
+  },
+  {
+    "objectID": "pages/vitae.html#teaching-experience",
+    "href": "pages/vitae.html#teaching-experience",
+    "title": "Bryam Steve Pinilla Jurado",
+    "section": " Teaching Experience",
+    "text": "Teaching Experience\n 2026 | Teaching Assistant — AI Agents | Chilean Financial Market Commission (CMF), Santiago, Chile.\n\nDesign and delivery of a training programme (4 h/week) for CMF teams on the development of LLM-based agents and subagents, including tool integration via the Model Context Protocol (MCP), applied to the automation of analysis, document extraction and evaluation tasks.\n\n 2025 – 2026 | Teaching Assistant — Astroinformatics | Universidad de Chile, Santiago, Chile.\n\nWeekly sessions (2 h/week) on machine learning and deep learning applied to real astronomical data, for undergraduate astronomy students and graduate students from several disciplines. Developed the complete practical material in Python (notebooks, exercises and assessments).\n\n 2024 | Teaching Assistant — Diploma Programme in Astronomy | Department of Astronomy (DAS), Universidad de Chile, and National Astronomical Observatory (OAN), Santiago, Chile | Academic support to students in the first edition of the programme.\n 2024 | Research Mentor — Explora RM Sur Poniente | Colegio San Ignacio, Santiago, Chile.\n\nMentored two secondary-school student teams in their research projects: a study of Thorne–Żytkow objects, and the design of a Galileoscope built from recycled materials available in a public institution.\n\n 2016 – 2022 | Teaching Assistant I/II | Universidad de Antioquia, Medellín, Colombia | Basic Mathematics Seedbed programme: 4 h/week of mathematics teaching for 8th–11th grade students and secondary-school graduates."
+  },
+  {
+    "objectID": "pages/vitae.html#outreach-science-communication",
+    "href": "pages/vitae.html#outreach-science-communication",
+    "title": "Bryam Steve Pinilla Jurado",
+    "section": " Outreach & Science Communication",
+    "text": "Outreach & Science Communication\n 2024 | Science outreach | Center for Astrophysics and Associated Technologies (CATA), Santiago Centro, Chile | Public astronomy outreach activities in the Santiago Centro district.\n 2018 – 2020 | Science Communicator and Logistics Assistant | Inmerdome, Medellín, Colombia | Production and presentation of science shows in a portable astronomical dome (mobile planetarium), and delivery of astronomy workshops for audiences of all ages."
   },
   {
     "objectID": "pages/vitae.html#summer-schools-conferences-workshops",
     "href": "pages/vitae.html#summer-schools-conferences-workshops",
     "title": "Bryam Steve Pinilla Jurado",
     "section": " Summer Schools, Conferences & Workshops",
-    "text": "Summer Schools, Conferences & Workshops\n 2025 | IV Chilean Astrochemistry | Presentation: Computational and Observational Search for Sulfur-Bearing Molecules using the APEX telescope | Santiago, Chile.\n 2024 | Curso del National Laboratory for High Performance Computing (NLHPC) de Introduccion y Avanzado en el uso del Clúster Leftraru EPU | Santiago, Chile.\n 2024 | 1st UNAB Astrochemistry Workshop | Santiago, Chile.\n 2024 | First LSST LatinAmerica Meeting | Poster: Combining Theory and Multi- modal Observations to Classify and Characterize Transient Events | La Serena, Chile.\n 2024 | Summer School in Statistics for Astronomers | Center for Astrostatistics, Pennsylvania State University, US.\n 2023 | Workshop in Computational Chemistry and Molecular Spectroscopy | Poster: Computational and Observational search for HCSCN, HCSCCH and c-C2H2S sulfur molecules around the carbon star IRC+10216 | Cocón, Chile.\n 2022 | Colombian Meeting of Astronomy & Astrophysics (COCOA) | Speaker, Tunja, Colombia.\n 2022 | International Virtual Courses (IVC), Introduction to Astrophysical Modeling and Computational | Institute Teknologi Bandung, Indonesia.\n 2022 | Astronomy Python Bootcamp, Red de Estudiantes Colombianos de Astronomía.\n 2022 | 1st Latinoamerican School of Gaia | Universidad de Antioquia, Medellín,Colombia.\n 2021 | Correcting Reddening Intelligently for Supernova Probes (CRISP), Characterization of the light-curve transition of Hydrogen-rich Supernovae (Speaker) | Virtual .\n 2021 | SuperVirtual: A virtual conference on supernovae and related transients, Characterization of the light-curve transition of Hydrogen-rich Supernovae (Poster) | Virtual.\n 2021 | Escuela de Verano en Astrofísica (EVA) 2021 | Institute of Radioastronomy and Astrophysics (IRyA), UNAM (México), Virtual, México.\n 2019 | Colombian Meeting of Astronomy & Astrophysics (COCOA) | Attendant, Medellín, Colombia."
+    "text": "Summer Schools, Conferences & Workshops\n 2025 | Machine Learning and Astrostatistics School: Applications to Massive Stars | Valparaíso, Chile.\n 2025 | CodeAstro: A Software Engineering Workshop for Astronomy | Version control, testing and packaging of scientific software | Evanston, Illinois, USA.\n 2024 | Latin American Conference on High Performance Computing (CARLA).\n 2024 | Introductory and Advanced Courses on the Leftraru EPU Cluster | National Laboratory for High Performance Computing (NLHPC), Santiago, Chile.\n 2024 | Summer School in Statistics for Astronomers | Center for Astrostatistics, Pennsylvania State University, Pennsylvania, USA.\n 2024 | 1st UNAB Astrochemistry Workshop | Universidad Andrés Bello, Santiago, Chile.\n 2022 | International Virtual Courses (IVC): Introduction to Astrophysical Modeling and Computation | Institut Teknologi Bandung, Indonesia.\n 2022 | Astronomy Python Bootcamp | Red de Estudiantes Colombianos de Astronomía.\n 2022 | 1st Latin American Gaia School | Universidad de Antioquia, Medellín, Colombia.\n 2021 | Summer School in Astrophysics (EVA 2021) | Institute of Radio Astronomy and Astrophysics (IRyA), UNAM, Virtual, Mexico.\n 2019 | Colombian Meeting of Astronomy & Astrophysics (COCOA) | Medellín, Colombia, Attendee."
   },
   {
     "objectID": "pages/vitae.html#complementary-education",
     "href": "pages/vitae.html#complementary-education",
     "title": "Bryam Steve Pinilla Jurado",
     "section": " Complementary Education",
-    "text": "Complementary Education\n 2025 | Introduction to Weight & Biases | Weight & Biases.\n 2025 | Fundamentals of Accelerated Computing with CUDA C/C++ | NVIDIA.\n 2025 | Fundamentals of Deep Learning | NVIDIA.\n 2022 | Data Science for All (DS4A) | MinTic and Correlation One, Colombia | 375 hours.\n 2020 | High dispersion spectroscopy for Astronomy and The large-scale structure of the Universe (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.\n 2019 | Machine Learning in Astronomy and Gravitational Lens (AstroTwinColo) | Universidad de Antioquia , Medellín, Colombia.\n 2017 | Application of methodology tools in investigation: Process in Science, Technology and Investigation | SENA, Cundinamarca, Colombia | 40 hours.\n 2016 | Radioastronomy with ALMA e Introduction to astrochemistry (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.\n 2013 | Seedbed of INGENIO UAM | Autonomous Universidad de Manizales, Manizales, Colombia | 40 hours.\n 2012 | Comprehensive action Leadership program | IPlay, Manizales, Colombia | 120 hours.\n 2010 | Aptitude in the English language, Centro de Idiomas Americanos (CIA) | Manizales, Colombia | 120 hours."
+    "text": "Complementary Education\n 2025 | Leadership and Team Development | Universidad de Chile, Santiago, Chile.\n 2022 | Data Science for All (DS4A) | MinTIC and Correlation One, Colombia | 375 hours | Final project: predictive model of the efficiency of a coffee-drying boiler from physical process variables, for Café Buendía.\n 2020 | High-Dispersion Spectroscopy for Astronomy and the Large-Scale Structure of the Universe (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.\n 2019 | Machine Learning in Astronomy and Gravitational Lensing (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.\n 2017 | Methodological Tools in Research: Processes in Science, Technology and Research | SENA, Cundinamarca, Colombia | 40 hours.\n 2016 | Radio Astronomy with ALMA and Introduction to Astrochemistry (AstroTwinColo) | Universidad de Antioquia, Medellín, Colombia.\n 2013 | INGENIO Research Incubator Programme | Universidad Autónoma de Manizales, Manizales, Colombia | 40 hours.\n 2012 | Comprehensive Leadership Programme | IPlay, Manizales, Colombia | 120 hours.\n 2010 | English Language Proficiency | Centro de Idiomas Americanos (CIA), Manizales, Colombia | 120 hours."
   },
   {
-    "objectID": "pages/vitae.html#academic-recognition-awards",
-    "href": "pages/vitae.html#academic-recognition-awards",
+    "objectID": "pages/vitae.html#awards-honours",
+    "href": "pages/vitae.html#awards-honours",
     "title": "Bryam Steve Pinilla Jurado",
-    "section": " Academic Recognition & Awards",
-    "text": "Academic Recognition & Awards\n 2023/01 | National Agency for Research and Development (ANID) Scholarship | Santiago, Chile.\n 2020/02 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.\n 2015/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.\n 2014/01 | Academic Honor. Best student of physics institute | Universidad de Antioquia, Medellín, Colombia.\nUpdated on: 2025-12-27"
+    "section": " Awards & Honours",
+    "text": "Awards & Honours\n 2023 – 2026 | ANID National Doctoral Scholarship | Chile.\n 2014, 2015 & 2020 | Academic Honour — Best student of the Physics Institute | Universidad de Antioquia, Medellín, Colombia.\n 2022 | Graduating rank 1/10, B.Sc. in Astronomy | Universidad de Antioquia, Medellín, Colombia."
+  },
+  {
+    "objectID": "pages/vitae.html#languages-1",
+    "href": "pages/vitae.html#languages-1",
+    "title": "Bryam Steve Pinilla Jurado",
+    "section": " Languages",
+    "text": "Languages\n Spanish: Native language.\n English: B2, certified by Global World.\nUpdated on: November 2026"
   },
   {
     "objectID": "posts/post-with-code/index.html",
